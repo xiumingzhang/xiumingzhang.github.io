@@ -74,7 +74,8 @@
 						<section id="two">
 							<div class="container">
 								<h3>News</h3>
-								<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
+								<h4>One weird thing about MATLAB's <code>eigs</code></h4>
+								<p> In finding the largest eigenvalue, <code>[~, eigvalue] = eigs(M); max_eigvalue = eigvalue(1, 1);</code> is much faster than <code>max_eigvalue = eigs(M, 1);</code>. In finding the eigenvector associated with the largest eigenvalue, <code>[V, ~] = eigs(M); max_v = V(:, 1);</code> is also much faster than <code>[max_v, ~] = eigs(M, 1);</code>.</p>
 								<ul class="feature-icons">
 									<li class="fa-code">Write all the code</li>
 									<li class="fa-cubes">Stack small boxes</li>
