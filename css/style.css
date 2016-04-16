@@ -1038,7 +1038,7 @@
 /* One */
 
 	#one:before {
-		background-image: url("../images/banners/csail.jpg");
+		background-image: url("../images/placeholders/banner.jpg");
 		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: cover;
