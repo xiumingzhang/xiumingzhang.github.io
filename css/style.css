@@ -1038,8 +1038,8 @@
 /* One */
 
 	#one:before {
-		background-image: url("../images/banner.jpg");
-		background-position: top right;
+		background-image: url("../images/banners/csail.jpg");
+		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: cover;
 		content: '';
