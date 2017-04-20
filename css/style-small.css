@@ -64,6 +64,18 @@
 		width: 100%;
 	}
 
+	.features2 article .image {
+		display: block;
+		margin: 0 0 2.25em 0;
+		padding-right: 0;
+		width: 100%;
+	}
+
+	.features2 article .inner {
+		display: block;
+		width: 100%;
+	}
+
 /* Header */
 
 	#header > header {
