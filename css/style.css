@@ -910,9 +910,9 @@
 
 	.features article .image {
 		display: inline-block;
-		padding-right: 2.5em;
+		padding-right: 1em;
 		vertical-align: middle;
-		width: 48%;
+		width: 20%;
 	}
 
 	.features article .image img {
@@ -923,43 +923,10 @@
 	.features article .inner {
 		display: inline-block;
 		vertical-align: middle;
-		width: 50%;
+		width: 75%;
 	}
 
 	.features article .inner > :last-child {
-		margin-bottom: 0;
-	}
-
-	.features2 article {
-		border-top: solid 3px #f4f4f4;
-		margin-bottom: 0em;
-		padding-top: 2.25em;
-	}
-
-	.features2 article:first-child {
-		border-top: 0;
-		padding-top: 0;
-	}
-
-	.features2 article .image {
-		display: inline-block;
-		padding-right: 1em;
-		vertical-align: middle;
-		width: 18%;
-	}
-
-	.features2 article .image img {
-		display: block;
-		width: 100%;
-	}
-
-	.features2 article .inner {
-		display: inline-block;
-		vertical-align: middle;
-		width: 81%;
-	}
-
-	.features2 article .inner > :last-child {
 		margin-bottom: 0;
 	}
 
