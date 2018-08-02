@@ -1,4 +1,4 @@
 # homepage
-Personal website
+Personal Website
 
-Local location: `~/public_html`.
+Local location: `~/public_html`
