@@ -38,6 +38,14 @@ a:hover {
     color: #0000FF !important;
 }
 
+a.lowkey {
+    border-bottom: none;
+}
+
+a.lowkey:hover {
+    color: #0000FF;
+}
+
 a.salient-blue {
     border-bottom: none;
     color: #0000FF;
