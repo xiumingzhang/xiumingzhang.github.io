@@ -703,12 +703,25 @@ table tbody tr {
     border-right: 0;
 }
 
+table.invisible tbody.invisible tr.invisible {
+    border: solid 0px;
+}
+
 table tbody tr:nth-child(2n + 1) {
     background-color: #fafafa;
 }
 
+table.invisible tbody.invisible tr.invisible:nth-child(2n + 1) {
+    background-color: #ffffff;
+}
+
 table td {
     padding: 0.75em 0.75em;
+    vertical-align: middle;
+}
+
+td.invisible {
+    text-align: center;
 }
 
 table th {
