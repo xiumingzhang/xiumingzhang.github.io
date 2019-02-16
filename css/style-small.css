@@ -59,19 +59,12 @@ header.major h2 + p {
     width: 100%;
 }
 
+/* Overriding above: no images when on small screens */
+.features article .image {
+    display: none;
+}
+
 .features article .inner {
-    display: block;
-    width: 100%;
-}
-
-.features2 article .image {
-    display: block;
-    margin: 0 0 2.25em 0;
-    padding-right: 0;
-    width: 100%;
-}
-
-.features2 article .inner {
     display: block;
     width: 100%;
 }
