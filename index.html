@@ -21,6 +21,7 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-layers.min.js"></script>
         <script src="js/init.js"></script>
+        <script src="js/const.js"></script>
         <noscript>
             <link rel="stylesheet" href="css/skel.css" />
             <link rel="stylesheet" href="css/style.css" />
@@ -65,7 +66,7 @@
                             <h3>About</h3>
                             <p>Xiuming Zhang&emsp;张修明<sup> <a href="pages/name.html"><i class="fa fa-question" aria-hidden="true"></i></a></sup></p>
                         </header>
-                        <p>I am a Ph.D. candidate advised by Prof. <a target='_blank' href="http://billf.mit.edu/">William T. Freeman</a> in the <a target='_blank' href="http://www.csail.mit.edu">Computer Science and Artificial Intelligence Laboratory (CSAIL)</a> at <a target='_blank' href="http://www.mit.edu">Massachusetts Institute of Technology (MIT)</a>. I work in the fields of computer vision and computer graphics, with particular interests in relighting, view synthesis, and material modeling.</p>
+                        <p>I am a Ph.D. candidate advised by Prof. <script>getConst("bill_hikey");</script> in the <a target='_blank' href="http://www.csail.mit.edu">Computer Science and Artificial Intelligence Laboratory (CSAIL)</a> at <script>getConst("mit");</script>. I work in the fields of computer vision and computer graphics, with particular interests in relighting, view synthesis, and material modeling.</p>
 
                         <p><i class="fa fa-at"></i>&ensp;xiuming <w>at</w> csail <w>dot</w> mit <w>dot</w> edu &emsp;|&emsp;
                         <i class="fa fa-github"></i>&ensp;<a target='_blank' href="http://github.com/xiumingzhang">GitHub</a> &emsp;|&emsp;
@@ -76,14 +77,14 @@
                             <tbody class="invisible">
                                 <tr class="invisible">
                                     <td>
-                                        <i class="fa fa-building fa-fw"></i>&ensp;<b>Intern</b>, Gcam, <a target='_blank' href="https://ai.google/research/teams/perception/">Google Research</a>, Summer 2019<br>
-                                        <i class="fa fa-fw"></i>&ensp;Hosts: <a target='_blank' href="https://ai.google/research/people/105312">Yun-Ta Tsai</a>, <a target='_blank' href="https://jonbarron.info/">Jonathan T. Barron</a>, <a target='_blank' href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>
+                                        <i class="fa fa-building fa-fw"></i>&ensp;<b>Intern</b>, Gcam, <script>getConst("google_res")</script>, Summer 2019<br>
+                                        <i class="fa fa-fw"></i>&ensp;Hosts: <script>getConst("yunta_hikey");</script>, <script>getConst("jon_hikey");</script>, <script>getConst("tianfan_hikey");</script>
                                     </td>
                                 </tr>
                                 <tr class="invisible">
                                     <td>
-                                        <i class="fa fa-university fa-fw"></i>&ensp;<b>S.M. (CS)</b>, <a target='_blank' href="http://www.mit.edu">Massachusetts Institute of Technology (MIT)</a>, 2016&ndash;2018<br>
-                                        <i class="fa fa-fw"></i>&ensp;Advisor: <a target='_blank' href="http://billf.mit.edu/">William T. Freeman</a>
+                                        <i class="fa fa-university fa-fw"></i>&ensp;<b>S.M. (CS)</b>, <script>getConst("mit");</script>, 2016&ndash;2018<br>
+                                        <i class="fa fa-fw"></i>&ensp;Advisor: <script>getConst("bill_hikey");</script>
                                     </td>
                                 </tr>
                                 <tr class="invisible">
@@ -94,7 +95,7 @@
                                 <tr class="invisible">
                                     <td>
                                         <i class="fa fa-university fa-fw"></i>&ensp;<b>B.Eng. (EE)</b>, <a target='_blank' href="http://www.nus.edu.sg/">National University of Singapore (NUS)</a>, 2011&ndash;2015<br>
-                                        <i class="fa fa-fw"></i>&ensp;Advisor: <a target='_blank' href="https://sites.google.com/view/yeolab/thomas">B. T. Thomas Yeo</a>
+                                        <i class="fa fa-fw"></i>&ensp;Advisor: <script>getConst("thomas_hikey");</script>
                                     </td>
                                 </tr>
                             </tbody>
@@ -119,10 +120,9 @@
                                     <tr><td width="15%">Apr. 2019</td><td>MoSculp is <a target='_blank' href="https://mitmuseum.mit.edu/exhibition/motion">on exhibition</a> in the MIT Museum (photos <a target='_blank' href="https://photos.app.goo.gl/HkTbsYtXQXxBo8up6">available here</a>)</td></tr>
                                     <tr><td width="15%">Jan. 2019</td><td>Awarded <a target='_blank' href="https://snapresearchfs.splashthat.com/">Snap Research Fellowship</a></td></tr>
                                     <tr><td width="15%">Dec. 2018</td><td>We <a target='_blank' href="http://genre.csail.mit.edu/talk/genre_nips.mp4">presented GenRe at NeurIPS</a> and released <a target='_blank' href="https://github.com/xiumingzhang/GenRe-ShapeHD">our codebase</a> for training/testing GenRe and ShapeHD</td></tr>
-                                    <tr><td width="15%">Sep. 2018</td><td>MoSculp got featured as <a target='_blank' href="http://mosculp.csail.mit.edu/assets/homepage.png">the 9/19 MIT homepage</a> and received media coverage by <a target='_blank' href="https://www.bbc.com/news/av/technology-45552015/creating-3d-sculptures-from-2d-video-and-other-news">BBC</a>, <a target='_blank' href="https://www.forbes.com/sites/jenniferhicks/2018/09/25/these-researchers-turned-2d-videos-into-3d-motion-sculptures">Forbes</a>, <a target='_blank' href="https://cacm.acm.org/news/231258-creating-3d-printed-motion-sculptures-from-2d-videos/fulltext">ACM</a>, <a target='_blank' href="https://news.mit.edu/2018/creating-3-d-printed-motion-sculptures-from-2-d-videos-mit-csail-0919">MIT</a>, and <a href="#four">etc.</a>
-                                        </td></tr>
-                                        <tr><td width="15%">Oct. 2016</td><td>Our paper on Bayesian modeling of Alzheimer's disease heterogeneity is <a target='_blank' href="http://dx.doi.org/10.1073/pnas.1611073113">out in PNAS</a> and received media coverage by <a target='_blank' href="http://www.eurekalert.org/pub_releases/2016-10/mgh-dba100716.php">EurekAlert!</a>, <a target='_blank' href="http://www.massgeneral.org/about/pressrelease.aspx?id=2002">MGH/HMS</a>, <a target='_blank' href="http://news.nus.edu.sg/highlights/model-illuminates-alzheimers-disease">NUS</a>, and <a href="#four">etc.</a></td></tr>
-                                        <tr><td>May 2016</td><td>Our work on Alzheimer's disease heterogeneity received the Magna Cum Laude Award and oral presentation at ISMRM</td></tr>
+                                    <tr><td width="15%">Sep. 2018</td><td>MoSculp got featured as <script>getConst("mosculp-homepage");</script> and received media coverage by <script>getConst("mosculp-bbc");</script>, <script>getConst("mosculp-forbes");</script>, <script>getConst("mosculp-mit");</script>, and <a href="#four">etc.</a></td></tr>
+                                    <tr><td width="15%">Oct. 2016</td><td>Our paper on Bayesian modeling of Alzheimer's disease heterogeneity is <a target='_blank' href="http://dx.doi.org/10.1073/pnas.1611073113">out in PNAS</a> and received media coverage by <script>getConst("ad-eurekalert");</script>, <script>getConst("ad-mgh");</script>, <script>getConst("ad-nus");</script>, and <a href="#four">etc.</a></td></tr>
+                                    <tr><td>May 2016</td><td>Our work on Alzheimer's disease heterogeneity received the Magna Cum Laude Award and oral presentation at <script>getConst("ismrm");</script></td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -146,13 +146,13 @@
                                         </div>
                                         <div class="inner">
                                             <b>Program-Guided Image Manipulators</b><br>
-                                            <a class="lowkey" target='_blank' href="http://jiayuanm.com/">Jiayuan Mao</a>*,
-                                            <u>Xiuming Zhang</u>*,
-                                            Yikai Li,
-                                            <a class="lowkey" target='_blank' href="https://billf.mit.edu/">William T. Freeman</a>,
-                                            <a class="lowkey" target='_blank' href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
-                                            <a class="lowkey" target='_blank' href="https://jiajunwu.com/">Jiajun Wu</a><br>
-                                            <b><a class="lowkey" target='_blank' href="https://en.wikipedia.org/wiki/International_Conference_on_Computer_Vision">ICCV</a> 2019</b><br>
+                                            <script>getConst("jiayuan");</script>*,
+                                            <script>getConst("me");</script>*,
+                                            <script>getConst("yikai");</script>,
+                                            <script>getConst("bill");</script>,
+                                            <script>getConst("josh");</script>,
+                                            <script>getConst("jiajun");</script><br>
+                                            <b><script>getConst("iccv");</script> 2019</b><br>
                                             <a target='_blank' href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Mao_Program-Guided_Image_Manipulators_ICCV_2019_paper.pdf">Paper</a> &ensp;|&ensp;
                                             <a target='_blank' href="http://pgim.csail.mit.edu/data/paper/2019ICCV-PGIM-Supp.pdf">Supplemental</a> &ensp;|&ensp;
                                             <a target='_blank' href="http://pgim.csail.mit.edu/">Project</a> &ensp;|&ensp;
@@ -166,12 +166,12 @@
                                         </div>
                                         <div class="inner">
                                             <b>Reconciling Dimensional and Categorical Models of Autism Heterogeneity: a Brain Connectomics & Behavioral Study</b><br>
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.com/citations?user=dpRSfnoAAAAJ&hl=en">Siyi Tang</a>*,
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.com.sg/citations?user=odaBvWAAAAAJ&hl=en">Nanbo Sun</a>*,
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.com/citations?user=RfCBO38AAAAJ&hl=en">Dorothea L. Floris</a>,
-                                            <u>Xiuming Zhang</u>,
-                                            <a class="lowkey" target='_blank' href="https://childmind.org/bio/adriana-di-martino/">Adriana Di Martino</a>,
-                                            <a class="lowkey" target='_blank' href="https://sites.google.com/view/yeolab/thomas">B. T. Thomas Yeo</a><br>
+                                            <script>getConst("siyi");</script>*,
+                                            <script>getConst("nanbo");</script>*,
+                                            Dorothea L. Floris,
+                                            <script>getConst("me");</script>,
+                                            Adriana Di Martino,
+                                            <script>getConst("thomas");</script><br>
                                             <b><a class="lowkey" target='_blank' href="https://en.wikipedia.org/wiki/Biological_Psychiatry_(journal)">Biological Psychiatry</a> 2019</b><br>
                                             <a target='_blank' href="https://doi.org/10.1016/j.biopsych.2019.11.009">Paper</a> &ensp;|&ensp;
                                             <a target='_blank' href="docs/bib/tang2019reconciling.bib">BibTeX</a><br>
@@ -185,12 +185,20 @@
                                         <div class="inner">
                                             <b>Data-Driven Detection of Latent Atrophy Factors Related to Phenotypical Variants of Posterior Cortical Atrophy</b><br>
                                             Colin Groot,
-                                            <a class="lowkey" target='_blank' href="https://sites.google.com/view/yeolab/thomas">B. T. Thomas Yeo</a>,
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.ca/citations?user=1m6yqlwAAAAJ&hl=en">Jacob W. Vogel</a>,
-                                            <u>Xiuming Zhang</u>,
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.com.sg/citations?user=odaBvWAAAAAJ&hl=en">Nanbo Sun</a>,
-                                            <a class="lowkey" target='_blank' href="https://med.stanford.edu/profiles/elizabeth-mormino">Elizabeth C. Mormino</a>,
-                                            et al.<br>
+                                            <script>getConst("thomas");</script>,
+                                            Jacob W. Vogel,
+                                            <script>getConst("me");</script>,
+                                            <script>getConst("nanbo");</script>,
+                                            <script>getConst("beth");</script>,
+                                            Yolande A. L. Pijnenburg,
+                                            Bruce L. Miller,
+                                            Howard J. Rosen,
+                                            Renaud La Joie,
+                                            Frederik Barkhof,
+                                            Philip Scheltens,
+                                            Wiesje M. van der Flier,
+                                            Gil D. Rabinovici,
+                                            Rik Ossenkoppele<br>
                                             <b>bioRxiv 2019</b><br>
                                             <a target='_blank' href="https://www.biorxiv.org/content/biorxiv/early/2019/06/24/679225.full.pdf">Paper</a> &ensp;|&ensp;
                                             <a target='_blank' href="docs/bib/groot2019data.bib">BibTeX</a><br>
@@ -203,13 +211,13 @@
                                         </div>
                                         <div class="inner">
                                             <b>Learning to Reconstruct Shapes from Unseen Classes</b><br>
-                                            <u>Xiuming Zhang</u>*,
-                                            <a class="lowkey" target='_blank' href="https://ztzhang.info/">Zhoutong Zhang</a>*,
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.com/citations?user=rChGGwgAAAAJ&hl=en">Chengkai Zhang</a>,
-                                            <a class="lowkey" target='_blank' href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
-                                            <a class="lowkey" target='_blank' href="https://billf.mit.edu/">William T. Freeman</a>,
-                                            <a class="lowkey" target='_blank' href="https://jiajunwu.com/">Jiajun Wu</a><br>
-                                            <b><a class="lowkey" target='_blank' href="https://en.wikipedia.org/wiki/Conference_on_Neural_Information_Processing_Systems">NeurIPS</a> 2018</b><br>
+                                            <script>getConst("me");</script>*,
+                                            <script>getConst("zhoutong");</script>*,
+                                            <script>getConst("chengkai");</script>,
+                                            <script>getConst("josh");</script>,
+                                            <script>getConst("bill");</script>,
+                                            <script>getConst("jiajun");</script><br>
+                                            <b><script>getConst("nips");</script> 2018</b><br>
                                             <font color="#A31F34">Oral Presentation</font> (oral/accepted/submitted: 30/1011/4856)<br>
                                             <a target='_blank' href="https://papers.nips.cc/paper/7494-learning-to-reconstruct-shapes-from-unseen-classes.pdf">Paper</a> &ensp;|&ensp;
                                             <a target='_blank' href="https://github.com/xiumingzhang/GenRe-ShapeHD">Code</a> &ensp;|&ensp;
@@ -224,23 +232,23 @@
                                         </div>
                                         <div class="inner">
                                             <b>MoSculp: Interactive Visualization of Shape and Time</b><br>
-                                            <u>Xiuming Zhang</u>,
-                                            <a class="lowkey" target='_blank' href="http://people.csail.mit.edu/talidekel/">Tali Dekel</a>,
-                                            <a class="lowkey" target='_blank' href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
-                                            <a class="lowkey" target='_blank' href="http://andrewowens.com/">Andrew Owens</a>,
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ&hl=en">Qiurui He</a>,
-                                            <a class="lowkey" target='_blank' href="https://jiajunwu.com/">Jiajun Wu</a>,
-                                            <a class="lowkey" target='_blank' href="http://stefaniemueller.org/">Stefanie Mueller</a>,
-                                            <a class="lowkey" target='_blank' href="https://billf.mit.edu/">William T. Freeman</a><br>
-                                            <b><a class="lowkey" target='_blank' href="https://en.wikipedia.org/wiki/ACM_Symposium_on_User_Interface_Software_and_Technology">UIST</a> 2018</b><br>
+                                            <script>getConst("me");</script>,
+                                            <script>getConst("tali");</script>,
+                                            <script>getConst("tianfan");</script>,
+                                            <script>getConst("andrew");</script>,
+                                            <script>getConst("qiurui");</script>,
+                                            <script>getConst("jiajun");</script>,
+                                            <script>getConst("stefanie");</script>,
+                                            <script>getConst("bill");</script><br>
+                                            <b><script>getConst("uist");</script> 2018</b><br>
                                             <a target='_blank' href="https://doi.org/10.1145/3242587.3242592">Paper</a> &ensp;|&ensp;
                                             <a target='_blank' href="https://github.com/xiumingzhang/mosculp-demo-ui">Demo</a> &ensp;|&ensp;
                                             <a target='_blank' href="http://mosculp.csail.mit.edu/">Project</a> &ensp;|&ensp;
                                             <a target='_blank' href="http://mosculp.csail.mit.edu/mosculp.bib">BibTeX</a><br>
                                             <font color="#A31F34">Press Coverage:</font>
-                                            <a target='_blank' href="https://www.forbes.com/sites/jenniferhicks/2018/09/25/these-researchers-turned-2d-videos-into-3d-motion-sculptures">Forbes</a>,
-                                            <a target='_blank' href="https://www.bbc.com/news/av/technology-45552015/creating-3d-sculptures-from-2d-video-and-other-news">BBC</a>,
-                                            <a target='_blank' href="https://news.mit.edu/2018/creating-3-d-printed-motion-sculptures-from-2-d-videos-mit-csail-0919">MIT</a> (featured as <a target='_blank' href="http://mosculp.csail.mit.edu/assets/homepage.png">the 9/19 homepage</a>),
+                                            <script>getConst("mosculp-forbes");</script>,
+                                            <script>getConst("mosculp-bbc");</script>,
+                                            <script>getConst("mosculp-mit");</script> (<script>getConst("mosculp-homepage");</script>),
                                             <a href="#four">etc.</a><br>
                                             <font color="#A31F34">Outreach:</font>
                                             <a target='_blank' href="https://photos.app.goo.gl/HkTbsYtXQXxBo8up6">MIT Museum</a>
@@ -253,13 +261,13 @@
                                         </div>
                                         <div class="inner">
                                             <b>Learning Shape Priors for Single-View 3D Completion and Reconstruction</b><br>
-                                            <a class="lowkey" target='_blank' href="https://jiajunwu.com/">Jiajun Wu</a>*,
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.com/citations?user=rChGGwgAAAAJ&hl=en">Chengkai Zhang</a>*,
-                                            <u>Xiuming Zhang</u>,
-                                            <a class="lowkey" target='_blank' href="https://ztzhang.info/">Zhoutong Zhang</a>,
-                                            <a class="lowkey" target='_blank' href="https://billf.mit.edu/">William T. Freeman</a>,
-                                            <a class="lowkey" target='_blank' href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a><br>
-                                            <b><a class="lowkey" target='_blank' href="https://en.wikipedia.org/wiki/European_Conference_on_Computer_Vision">ECCV</a> 2018</b><br>
+                                            <script>getConst("jiajun");</script>*,
+                                            <script>getConst("chengkai");</script>*,
+                                            <script>getConst("me");</script>,
+                                            <script>getConst("zhoutong");</script>,
+                                            <script>getConst("bill");</script>,
+                                            <script>getConst("josh");</script><br>
+                                            <b><script>getConst("eccv");</script> 2018</b><br>
                                             <a target='_blank' href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Jiajun_Wu_Learning_3D_Shape_ECCV_2018_paper.pdf">Paper</a> &ensp;|&ensp;
                                             <a target='_blank' href="https://github.com/xiumingzhang/GenRe-ShapeHD">Code</a> &ensp;|&ensp;
                                             <a target='_blank' href="http://shapehd.csail.mit.edu/">Project</a> &ensp;|&ensp;
@@ -273,15 +281,15 @@
                                         </div>
                                         <div class="inner">
                                             <b>Pix3D: Dataset and Methods for Single-Image 3D Shape Modeling</b><br>
-                                            <a class="lowkey" target='_blank' href="http://people.csail.mit.edu/xingyuan/">Xingyuan Sun</a>*,
-                                            <a class="lowkey" target='_blank' href="https://jiajunwu.com/">Jiajun Wu</a>*,
-                                            <u>Xiuming Zhang</u>,
-                                            <a class="lowkey" target='_blank' href="https://ztzhang.info/">Zhoutong Zhang</a>,
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.com/citations?user=rChGGwgAAAAJ&hl=en">Chengkai Zhang</a>,
-                                            <a class="lowkey" target='_blank' href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
-                                            <a class="lowkey" target='_blank' href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
-                                            <a class="lowkey" target='_blank' href="https://billf.mit.edu/">William T. Freeman</a><br>
-                                            <b><a class="lowkey" target='_blank' href="https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition">CVPR</a> 2018</b><br>
+                                            <script>getConst("xingyuan");</script>*,
+                                            <script>getConst("jiajun");</script>*,
+                                            <script>getConst("me");</script>,
+                                            <script>getConst("zhoutong");</script>,
+                                            <script>getConst("chengkai");</script>,
+                                            <script>getConst("tianfan");</script>,
+                                            <script>getConst("josh");</script>,
+                                            <script>getConst("bill");</script><br>
+                                            <b><script>getConst("cvpr");</script> 2018</b><br>
                                             <a target='_blank' href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Sun_Pix3D_Dataset_and_CVPR_2018_paper.pdf">Paper</a> &ensp;|&ensp;
                                             <a target='_blank' href="https://github.com/xingyuansun/pix3d">Code</a> &ensp;|&ensp;
                                             <a target='_blank' href="http://pix3d.csail.mit.edu/">Project</a> &ensp;|&ensp;
@@ -295,24 +303,24 @@
                                         </div>
                                         <div class="inner">
                                             <b>Bayesian Model Reveals Latent Atrophy Factors with Dissociable Cognitive Trajectories in Alzheimer's Disease</b><br>
-                                            <u>Xiuming Zhang</u>,
-                                            <a class="lowkey" target='_blank' href="https://med.stanford.edu/profiles/elizabeth-mormino">Elizabeth C. Mormino</a>,
-                                            <a class="lowkey" target='_blank' href="https://scholar.google.com.sg/citations?user=odaBvWAAAAAJ&hl=en">Nanbo Sun</a>,
-                                            <a class="lowkey" target='_blank' href="https://www.nmr.mgh.harvard.edu/user/5647">Reisa A. Sperling</a>,
-                                            <a class="lowkey" target='_blank' href="http://sabuncu.engineering.cornell.edu/">Mert R. Sabuncu</a>,
-                                            <a class="lowkey" target='_blank' href="https://sites.google.com/view/yeolab/thomas">B. T. Thomas Yeo</a><br>
-                                            <b><a class="lowkey" target='_blank' href="https://en.wikipedia.org/wiki/Proceedings_of_the_National_Academy_of_Sciences_of_the_United_States_of_America">PNAS</a> 2016</b><br>
+                                            <script>getConst("me");</script>,
+                                            <script>getConst("beth");</script>,
+                                            <script>getConst("nanbo");</script>,
+                                            <script>getConst("reisa");</script>,
+                                            <script>getConst("mert");</script>,
+                                            <script>getConst("thomas");</script><br>
+                                            <b><script>getConst("pnas");</script> 2016</b><br>
                                             <a target='_blank' href="http://dx.doi.org/10.1073/pnas.1611073113">Paper</a> &ensp;|&ensp;
                                             <a target='_blank' href="http://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/disorder_subtypes/Zhang2016_ADFactors">Code</a> &ensp;|&ensp;
                                             <a target='_blank' href="http://www.pnas.org/content/pnas/suppl/2016/10/04/1611073113.DCSupplemental/pnas.1611073113.sapp.pdf">Supplemental</a> &ensp;|&ensp;
                                             <a target='_blank' href="docs/posters/ad-factors.pdf">Poster</a> &ensp;|&ensp;
                                             <a target='_blank' href="docs/bib/zhang2016bayesian.bib">BibTeX</a><br>
-                                            <font color="#A31F34">Magna Cum Laude Award</font> & <font color="#A31F34">Oral Presentation</font> at <a class="lowkey" target='_blank' href="https://www.ismrm.org/">ISMRM</a> 2016<br>
+                                            <font color="#A31F34">Magna Cum Laude Award</font> & <font color="#A31F34">Oral Presentation</font> at <script>getConst("ismrm");</script><br>
                                             <font color="#A31F34">Press Coverage:</font>
-                                            <a target='_blank' href="http://www.eurekalert.org/pub_releases/2016-10/mgh-dba100716.php">EurekAlert!</a>,
-                                            <a target='_blank' href="http://www.upi.com/Health_News/2016/10/07/Brain-atrophy-patterns-may-explain-diversity-in-Alzheimers-symptoms/9771475867874/">UPI</a>,
-                                            <a target='_blank' href="http://news.nus.edu.sg/highlights/model-illuminates-alzheimers-disease">NUS</a>,
-                                            <a target='_blank' href="http://www.massgeneral.org/about/pressrelease.aspx?id=2002">MGH/HMS</a>,
+                                            <script>getConst("ad-eurekalert");</script>,
+                                            <script>getConst("ad-upi");</script>,
+                                            <script>getConst("ad-nus");</script>,
+                                            <script>getConst("ad-mgh");</script>,
                                             <a href="#four">etc.</a>
                                         </div>
                                     </article>
