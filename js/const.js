@@ -121,10 +121,16 @@ function getConst(id) {
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/Proceedings_of_the_National_Academy_of_Sciences_of_the_United_States_of_America\">PNAS</a>");
             break;
         case "ismrm":
-            document.write("<a target='_blank' href=\"https://www.ismrm.org/2016-annual-meeting-exhibition/\">ISMRM 2016</a>");
+            document.write("<a target='_blank' href=\"https://en.wikipedia.org/wiki/International_Society_of_Magnetic_Resonance_in_Medicine\">ISMRM</a>");
             break;
         case "ad-upi":
             document.write("<a target='_blank' href=\"http://www.upi.com/Health_News/2016/10/07/Brain-atrophy-patterns-may-explain-diversity-in-Alzheimers-symptoms/9771475867874/\">UPI</a>");
+            break;
+        case "bigsep":
+            document.write("&emsp;|&emsp;");
+            break;
+        case "smallsep":
+            document.write("&ensp;|&ensp;");
             break;
         default:
             document.write("UNDEFINED");
