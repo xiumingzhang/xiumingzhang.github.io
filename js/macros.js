@@ -169,3 +169,7 @@ function project(link) {
 function bibtex(link) {
     document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[bibtex]</font></a>`);
 }
+
+function hl(text) {
+    document.write(`<font color="#A31F34">${text}</font>`);
+}
