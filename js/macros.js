@@ -136,3 +136,29 @@ function getConst(id) {
             document.write("UNDEFINED");
     }
 }
+
+var button_fontsize = "2em"
+
+function paper(link) {
+    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[paper]</font></a>`);
+}
+
+function code(link) {
+    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[code]</font></a>`);
+}
+
+function doc(link) {
+    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[doc]</font></a>`);
+}
+
+function supp(link) {
+    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[supp]</font></a>`);
+}
+
+function project(link) {
+    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[project]</font></a>`);
+}
+
+function bibtex(link) {
+    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[bibtex]</font></a>`);
+}

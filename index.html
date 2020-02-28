@@ -21,7 +21,7 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-layers.min.js"></script>
         <script src="js/init.js"></script>
-        <script src="js/const.js"></script>
+        <script src="js/macros.js"></script>
         <noscript>
             <link rel="stylesheet" href="css/skel.css" />
             <link rel="stylesheet" href="css/style.css" />
@@ -146,18 +146,20 @@
                                             <img src="images/pub/pgim.jpg"/>
                                         </div>
                                         <div class="inner">
-                                            <b>Program-Guided Image Manipulators</b><br>
+                                            <b>Program-Guided Image Manipulators</b>
+                                            <script>paper("http://openaccess.thecvf.com/content_ICCV_2019/papers/Mao_Program-Guided_Image_Manipulators_ICCV_2019_paper.pdf");</script>
+                                            <script>supp("http://pgim.csail.mit.edu/data/paper/2019ICCV-PGIM-Supp.pdf");</script>
+                                            <script>project("http://pgim.csail.mit.edu/");</script>
+                                            <script>bibtex("http://pgim.csail.mit.edu/data/bibtex/2019ICCV-PGIM.bib");</script>
+                                            <br>
                                             <script>getConst("jiayuan");</script>*,
                                             <script>getConst("me");</script>*,
                                             <script>getConst("yikai");</script>,
                                             <script>getConst("bill");</script>,
                                             <script>getConst("josh");</script>,
-                                            <script>getConst("jiajun");</script><br>
-                                            <b><script>getConst("iccv");</script> 2019</b><br>
-                                            <a target='_blank' href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Mao_Program-Guided_Image_Manipulators_ICCV_2019_paper.pdf">Paper</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://pgim.csail.mit.edu/data/paper/2019ICCV-PGIM-Supp.pdf">Supplemental</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://pgim.csail.mit.edu/">Project</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://pgim.csail.mit.edu/data/bibtex/2019ICCV-PGIM.bib">BibTeX</a><br>
+                                            <script>getConst("jiajun");</script>
+                                            <br>
+                                            <b><script>getConst("iccv");</script> 2019</b>
                                         </div>
                                     </article>
 
@@ -166,16 +168,18 @@
                                             <img src="images/pub/asd-factors.jpg"/>
                                         </div>
                                         <div class="inner">
-                                            <b>Reconciling Dimensional and Categorical Models of Autism Heterogeneity: a Brain Connectomics & Behavioral Study</b><br>
+                                            <b>Reconciling Dimensional and Categorical Models of Autism Heterogeneity: a Brain Connectomics & Behavioral Study</b>
+                                            <script>paper("https://doi.org/10.1016/j.biopsych.2019.11.009");</script>
+                                            <script>bibtex("docs/bib/tang2019reconciling.bib");</script>
+                                            <br>
                                             <script>getConst("siyi");</script>*,
                                             <script>getConst("nanbo");</script>*,
                                             Dorothea L. Floris,
                                             <script>getConst("me");</script>,
                                             Adriana Di Martino,
-                                            <script>getConst("thomas");</script><br>
-                                            <b><a class="lowkey" target='_blank' href="https://en.wikipedia.org/wiki/Biological_Psychiatry_(journal)">Biological Psychiatry</a> 2019</b><br>
-                                            <a target='_blank' href="https://doi.org/10.1016/j.biopsych.2019.11.009">Paper</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="docs/bib/tang2019reconciling.bib">BibTeX</a><br>
+                                            <script>getConst("thomas");</script>
+                                            <br>
+                                            <b><a class="lowkey" target='_blank' href="https://en.wikipedia.org/wiki/Biological_Psychiatry_(journal)">Biological Psychiatry</a> 2019</b>
                                         </div>
                                     </article>
 
@@ -184,7 +188,10 @@
                                             <img src="images/pub/pca-factors.jpg"/>
                                         </div>
                                         <div class="inner">
-                                            <b>Data-Driven Detection of Latent Atrophy Factors Related to Phenotypical Variants of Posterior Cortical Atrophy</b><br>
+                                            <b>Data-Driven Detection of Latent Atrophy Factors Related to Phenotypical Variants of Posterior Cortical Atrophy</b>
+                                            <script>paper("https://doi.org/10.1101/679225");</script>
+                                            <script>bibtex("docs/bib/groot2019data.bib");</script>
+                                            <br>
                                             Colin Groot,
                                             <script>getConst("thomas");</script>,
                                             Jacob W. Vogel,
@@ -199,10 +206,9 @@
                                             Philip Scheltens,
                                             Wiesje M. van der Flier,
                                             Gil D. Rabinovici,
-                                            Rik Ossenkoppele<br>
-                                            <b>bioRxiv 2019</b><br>
-                                            <a target='_blank' href="https://doi.org/10.1101/679225">Paper</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="docs/bib/groot2019data.bib">BibTeX</a><br>
+                                            Rik Ossenkoppele
+                                            <br>
+                                            <b>bioRxiv 2019</b>
                                         </div>
                                     </article>
 
@@ -211,19 +217,22 @@
                                             <img src="images/pub/genre.jpg"/>
                                         </div>
                                         <div class="inner">
-                                            <b>Learning to Reconstruct Shapes from Unseen Classes</b><br>
+                                            <b>Learning to Reconstruct Shapes from Unseen Classes</b>
+                                            <script>paper("https://papers.nips.cc/paper/7494-learning-to-reconstruct-shapes-from-unseen-classes.pdf");</script>
+                                            <script>code("https://github.com/xiumingzhang/GenRe-ShapeHD");</script>
+                                            <script>project("http://genre.csail.mit.edu/");</script>
+                                            <script>bibtex("http://genre.csail.mit.edu/bibtex/genre_nips.bib");</script>
+                                            <br>
                                             <script>getConst("me");</script>*,
                                             <script>getConst("zhoutong");</script>*,
                                             <script>getConst("chengkai");</script>,
                                             <script>getConst("josh");</script>,
                                             <script>getConst("bill");</script>,
-                                            <script>getConst("jiajun");</script><br>
-                                            <b><script>getConst("nips");</script> 2018</b><br>
-                                            <font color="#A31F34">Oral Presentation</font> (oral/accepted/submitted: 30/1011/4856)<br>
-                                            <a target='_blank' href="https://papers.nips.cc/paper/7494-learning-to-reconstruct-shapes-from-unseen-classes.pdf">Paper</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="https://github.com/xiumingzhang/GenRe-ShapeHD">Code</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://genre.csail.mit.edu/">Project</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://genre.csail.mit.edu/bibtex/genre_nips.bib">BibTeX</a><br>
+                                            <script>getConst("jiajun");</script>
+                                            <br>
+                                            <b><script>getConst("nips");</script> 2018</b>
+                                            <br>
+                                            <font color="#A31F34">Oral Presentation</font> (oral/accepted/submitted: 30/1011/4856)
                                         </div>
                                     </article>
 
@@ -232,7 +241,12 @@
                                             <img src="images/pub/mosculp.jpg"/>
                                         </div>
                                         <div class="inner">
-                                            <b>MoSculp: Interactive Visualization of Shape and Time</b><br>
+                                            <b>MoSculp: Interactive Visualization of Shape and Time</b>
+                                            <script>paper("https://doi.org/10.1145/3242587.3242592");</script>
+                                            <script>code("https://github.com/xiumingzhang/mosculp-demo-ui");</script>
+                                            <script>project("http://mosculp.csail.mit.edu/");</script>
+                                            <script>bibtex("http://mosculp.csail.mit.edu/mosculp.bib");</script>
+                                            <br>
                                             <script>getConst("me");</script>,
                                             <script>getConst("tali");</script>,
                                             <script>getConst("tianfan");</script>,
@@ -240,17 +254,16 @@
                                             <script>getConst("qiurui");</script>,
                                             <script>getConst("jiajun");</script>,
                                             <script>getConst("stefanie");</script>,
-                                            <script>getConst("bill");</script><br>
-                                            <b><script>getConst("uist");</script> 2018</b><br>
-                                            <a target='_blank' href="https://doi.org/10.1145/3242587.3242592">Paper</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="https://github.com/xiumingzhang/mosculp-demo-ui">Demo</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://mosculp.csail.mit.edu/">Project</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://mosculp.csail.mit.edu/mosculp.bib">BibTeX</a><br>
+                                            <script>getConst("bill");</script>
+                                            <br>
+                                            <b><script>getConst("uist");</script> 2018</b>
+                                            <br>
                                             <font color="#A31F34">Press Coverage:</font>
                                             <script>getConst("mosculp-forbes");</script>,
                                             <script>getConst("mosculp-bbc");</script>,
                                             <script>getConst("mosculp-mit");</script> (<script>getConst("mosculp-homepage");</script>),
-                                            <a href="#four">etc.</a><br>
+                                            <a href="#four">etc.</a>
+                                            <br>
                                             <font color="#A31F34">Outreach:</font>
                                             <a target='_blank' href="https://photos.app.goo.gl/HkTbsYtXQXxBo8up6">MIT Museum</a>
                                         </div>
@@ -261,18 +274,20 @@
                                             <img src="images/pub/shapehd.jpg"/>
                                         </div>
                                         <div class="inner">
-                                            <b>Learning Shape Priors for Single-View 3D Completion and Reconstruction</b><br>
+                                            <b>Learning Shape Priors for Single-View 3D Completion and Reconstruction</b>
+                                            <script>paper("https://doi.org/10.1007/978-3-030-01252-6_40");</script>
+                                            <script>code("https://github.com/xiumingzhang/GenRe-ShapeHD");</script>
+                                            <script>project("http://shapehd.csail.mit.edu/");</script>
+                                            <script>bibtex("http://shapehd.csail.mit.edu/bibtex/shapehd_eccv.bib");</script>
+                                            <br>
                                             <script>getConst("jiajun");</script>*,
                                             <script>getConst("chengkai");</script>*,
                                             <script>getConst("me");</script>,
                                             <script>getConst("zhoutong");</script>,
                                             <script>getConst("bill");</script>,
-                                            <script>getConst("josh");</script><br>
-                                            <b><script>getConst("eccv");</script> 2018</b><br>
-                                            <a target='_blank' href="https://doi.org/10.1007/978-3-030-01252-6_40">Paper</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="https://github.com/xiumingzhang/GenRe-ShapeHD">Code</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://shapehd.csail.mit.edu/">Project</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://shapehd.csail.mit.edu/bibtex/shapehd_eccv.bib">BibTeX</a><br>
+                                            <script>getConst("josh");</script>
+                                            <br>
+                                            <b><script>getConst("eccv");</script> 2018</b>
                                         </div>
                                     </article>
 
@@ -281,7 +296,12 @@
                                             <img src="images/pub/pix3d.jpg"/>
                                         </div>
                                         <div class="inner">
-                                            <b>Pix3D: Dataset and Methods for Single-Image 3D Shape Modeling</b><br>
+                                            <b>Pix3D: Dataset and Methods for Single-Image 3D Shape Modeling</b>
+                                            <script>paper("https://doi.org/10.1109/CVPR.2018.00314");</script>
+                                            <script>code("https://github.com/xingyuansun/pix3d");</script>
+                                            <script>project("http://pix3d.csail.mit.edu/");</script>
+                                            <script>bibtex("http://pix3d.csail.mit.edu/bibtex/pix3d_cvpr.bib");</script>
+                                            <br>
                                             <script>getConst("xingyuan");</script>*,
                                             <script>getConst("jiajun");</script>*,
                                             <script>getConst("me");</script>,
@@ -289,12 +309,9 @@
                                             <script>getConst("chengkai");</script>,
                                             <script>getConst("tianfan");</script>,
                                             <script>getConst("josh");</script>,
-                                            <script>getConst("bill");</script><br>
-                                            <b><script>getConst("cvpr");</script> 2018</b><br>
-                                            <a target='_blank' href="https://doi.org/10.1109/CVPR.2018.00314">Paper</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="https://github.com/xingyuansun/pix3d">Code</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://pix3d.csail.mit.edu/">Project</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://pix3d.csail.mit.edu/bibtex/pix3d_cvpr.bib">BibTeX</a><br>
+                                            <script>getConst("bill");</script>
+                                            <br>
+                                            <b><script>getConst("cvpr");</script> 2018</b>
                                         </div>
                                     </article>
 
@@ -303,20 +320,24 @@
                                             <img src="images/pub/ad-factors.jpg"/>
                                         </div>
                                         <div class="inner">
-                                            <b>Bayesian Model Reveals Latent Atrophy Factors with Dissociable Cognitive Trajectories in Alzheimer's Disease</b><br>
+                                            <b>Bayesian Model Reveals Latent Atrophy Factors with Dissociable Cognitive Trajectories in Alzheimer's Disease</b>
+                                            <script>paper("http://dx.doi.org/10.1073/pnas.1611073113");</script>
+                                            <script>supp("http://www.pnas.org/content/pnas/suppl/2016/10/04/1611073113.DCSupplemental/pnas.1611073113.sapp.pdf");</script>
+                                            <script>code("http://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/disorder_subtypes/Zhang2016_ADFactors");</script>
+                                            <script>poster("docs/posters/ad-factors.pdf");</script>
+                                            <script>bibtex("docs/bib/zhang2016bayesian.bib");</script>
+                                            <br>
                                             <script>getConst("me");</script>,
                                             <script>getConst("beth");</script>,
                                             <script>getConst("nanbo");</script>,
                                             <script>getConst("reisa");</script>,
                                             <script>getConst("mert");</script>,
-                                            <script>getConst("thomas");</script><br>
-                                            <b><script>getConst("pnas");</script> 2016</b><br>
-                                            <a target='_blank' href="http://dx.doi.org/10.1073/pnas.1611073113">Paper</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/disorder_subtypes/Zhang2016_ADFactors">Code</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="http://www.pnas.org/content/pnas/suppl/2016/10/04/1611073113.DCSupplemental/pnas.1611073113.sapp.pdf">Supplemental</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="docs/posters/ad-factors.pdf">Poster</a> <script>getConst("smallsep");</script>
-                                            <a target='_blank' href="docs/bib/zhang2016bayesian.bib">BibTeX</a><br>
-                                            <font color="#A31F34">Magna Cum Laude Award</font> & <font color="#A31F34">Oral Presentation</font> at <script>getConst("ismrm");</script> 2016<br>
+                                            <script>getConst("thomas");</script>
+                                            <br>
+                                            <b><script>getConst("pnas");</script> 2016</b>
+                                            <br>
+                                            <font color="#A31F34">Magna Cum Laude Award</font> & <font color="#A31F34">Oral Presentation</font> at <script>getConst("ismrm");</script> 2016
+                                            <br>
                                             <font color="#A31F34">Press Coverage:</font>
                                             <script>getConst("ad-eurekalert");</script>,
                                             <script>getConst("ad-upi");</script>,
@@ -382,58 +403,76 @@
                         <div class="features">
 
                             <article>
-                                <div class="image"><img src="images/side-proj/xiuminglib.jpg" alt="" /></div>
+                                <div class="image">
+                                    <img src="images/side-proj/xiuminglib.jpg" alt="" />
+                                </div>
                                 <div class="inner">
-                                    <h4>xiuminglib</h4>
-                                    My Python library that includes useful functions for signal/image processing, 3D modeling and rendering with Blender, visualization utility, and etc.<br>
-                                    <a target='_blank' href="https://xiuminglib.readthedocs.io/">Documentation</a> <script>getConst("smallsep");</script>
-                                    <a target='_blank' href="https://github.com/xiumingzhang/xiuminglib">Code</a>
+                                    <b>xiuminglib</b>
+                                    <script>doc("https://xiuminglib.readthedocs.io/");</script>
+                                    <script>code("https://github.com/xiumingzhang/xiuminglib");</script>
+                                    <br>
+                                    My Python library that includes useful functions for signal/image processing, 3D modeling and rendering with Blender, visualization utility, and etc.
                                 </div>
                             </article>
 
                             <article>
-                                <div class="image"><img src="images/side-proj/style-transfer_depth.jpg" alt="" /></div>
+                                <div class="image">
+                                    <img src="images/side-proj/style-transfer_depth.jpg" alt="" />
+                                </div>
                                 <div class="inner">
-                                    <h4>Depth-Preserving Style Transfer</h4>
+                                    <b>Depth-Preserving Style Transfer</b>
+                                    <script>paper("http://github.com/xiumingzhang/depth-preserving-neural-style-transfer/blob/master/report/egpaper_final.pdf");</script>
+                                    <script>code("http://github.com/xiumingzhang/depth-preserving-neural-style-transfer");</script>
+                                    <br>
                                     An improvement to <a target='_blank' href="http://cs.stanford.edu/people/jcjohns/eccv16/">Johnson, Alahi, and Fei-Fei, ECCV '16</a> aiming to preserve depth variations in the original content image during style transfer (MIT 6.869 class project with <a target='_blank' class="lowkey" href="http://people.csail.mit.edu/ruizhi/">Ruizhi Liao</a> and <a target='_blank' class="lowkey" href="https://scholar.google.at/citations?user=o6rbjpUAAAAJ&hl=en">Yu Xia</a>).<br>
-                                    <a target='_blank' href="http://github.com/xiumingzhang/depth-preserving-neural-style-transfer/blob/master/report/egpaper_final.pdf">Paper</a> <script>getConst("smallsep");</script>
-                                    <a target='_blank' href="http://github.com/xiumingzhang/depth-preserving-neural-style-transfer">Code</a>
                                 </div>
                             </article>
 
                             <article>
-                                <div class="image"><img src="images/side-proj/lme.jpg" alt="" /></div>
+                                <div class="image">
+                                    <img src="images/side-proj/lme.jpg" alt="" />
+                                </div>
                                 <div class="inner">
-                                    <h4>ReML Estimation in Linear Models</h4>
-                                    A tutorial on Restricted Maximum Likelihood Estimation in linear regression and Linear Mixed-Effects Models.<br>
-                                    <a target='_blank' href="docs/tutorials/reml.pdf">Paper</a>
+                                    <b>ReML Estimation in Linear Models</b>
+                                    <script>paper("docs/tutorials/reml.pdf");</script>
+                                    <br>
+                                    A tutorial on Restricted Maximum Likelihood Estimation in linear regression and Linear Mixed-Effects Models.
                                 </div>
                             </article>
 
                             <article>
-                                <div class="image"><img src="images/side-proj/grabcut.jpg" alt="" /></div>
+                                <div class="image">
+                                    <img src="images/side-proj/grabcut.jpg" alt="" />
+                                </div>
                                 <div class="inner">
-                                    <h4>GrabCut</h4>
-                                    A MATLAB implementation excluding border matting and user editing.<br>
-                                    <a target='_blank' href="http://github.com/xiumingzhang/grabcut">Code</a>
+                                    <b>GrabCut</b>
+                                    <script>code("http://github.com/xiumingzhang/grabcut");</script>
+                                    <br>
+                                    A MATLAB implementation excluding border matting and user editing.
                                 </div>
                             </article>
 
                             <article>
-                                <div class="image"><img src="images/side-proj/photometric-stereo.jpg" alt="" /></div>
+                                <div class="image">
+                                    <img src="images/side-proj/photometric-stereo.jpg" alt="" />
+                                </div>
                                 <div class="inner">
-                                    <h4>Basic Photometric Stereo</h4>
-                                    A MATLAB implementation of the basic photometric stereo algorithm.<br>
-                                    <a target='_blank' href="http://github.com/xiumingzhang/photometric-stereo">Code</a>
+                                    <b>Basic Photometric Stereo</b>
+                                    <script>code("http://github.com/xiumingzhang/photometric-stereo")</script>
+                                    <br>
+                                    A MATLAB implementation of the basic photometric stereo algorithm.
                                 </div>
                             </article>
 
                             <article>
-                                <div class="image"><img src="images/side-proj/photonic-bandgap.jpg" alt="" /></div>
+                                <div class="image">
+                                    <img src="images/side-proj/photonic-bandgap.jpg" alt="" />
+                                </div>
                                 <div class="inner">
-                                    <h4>Bandgap of 2D Photonic Crystal</h4>
-                                    Replicating a classic textbook plot with COMSOL-MATLAB scripting.<br>
-                                    <a target='_blank' href="http://github.com/xiumingzhang/photonic-bandgap-comsol-matlab">Code</a>
+                                    <b>Bandgap of 2D Photonic Crystal</b>
+                                    <script>code("http://github.com/xiumingzhang/photonic-bandgap-comsol-matlab")</script>
+                                    <br>
+                                    Replicating a classic textbook plot with COMSOL-MATLAB scripting.
                                 </div>
                             </article>
 
