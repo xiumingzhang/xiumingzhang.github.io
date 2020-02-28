@@ -126,10 +126,17 @@ function getConst(id) {
         case "ad-upi":
             document.write("<a target='_blank' href=\"http://www.upi.com/Health_News/2016/10/07/Brain-atrophy-patterns-may-explain-diversity-in-Alzheimers-symptoms/9771475867874/\">UPI</a>");
             break;
-        case "bigsep":
+        default:
+            document.write("UNDEFINED");
+    }
+}
+
+function getSep(size) {
+    switch(size) {
+        case "big":
             document.write("&emsp;|&emsp;");
             break;
-        case "smallsep":
+        case "small":
             document.write("&ensp;|&ensp;");
             break;
         default:
