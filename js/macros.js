@@ -43,7 +43,7 @@ function getConst(id) {
             document.write("<a target='_blank' href=\"http://www.eurekalert.org/pub_releases/2016-10/mgh-dba100716.php\">EurekAlert!</a>");
             break;
         case "ad-mgh":
-            document.write("<a target='_blank' href=\"http://www.massgeneral.org/about/pressrelease.aspx?id=2002\">MGH/HMS</a>");
+            document.write("<a target='_blank' href=\"https://web.archive.org/web/20171117211844/http://www.massgeneral.org/about/pressrelease.aspx?id=2002\">MGH/HMS</a>");
             break;
         case "ad-nus":
             document.write("<a target='_blank' href=\"http://news.nus.edu.sg/highlights/model-illuminates-alzheimers-disease\">NUS</a>");
@@ -169,7 +169,6 @@ function project(link) {
 function bibtex(link) {
     document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[bibtex]</font></a>`);
 }
-
 function hl(text) {
     document.write(`<font color="#A31F34">${text}</font>`);
 }

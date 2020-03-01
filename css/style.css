@@ -721,7 +721,7 @@ table.invisible tbody.invisible tr.invisible:nth-child(2n + 1) {
 }
 
 table td {
-    padding: 0.75em 0.75em;
+    padding: 0.5em 0.75em;
     vertical-align: middle;
 }
 
