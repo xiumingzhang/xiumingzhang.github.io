@@ -144,31 +144,35 @@ function getSep(size) {
     }
 }
 
-var button_fontsize = "2em"
+function sup(text, link) {
+    var fontsize = "";
+    return `<sup><font size="${fontsize}"><a target='_blank' href="${link}">[${text}]</a></font></sup>`;
+}
 
 function paper(link) {
-    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[paper]</font></a>`);
+    document.write(sup("paper", link));
 }
 
 function code(link) {
-    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[code]</font></a>`);
+    document.write(sup("code", link));
 }
 
 function doc(link) {
-    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[doc]</font></a>`);
+    document.write(sup("doc", link));
 }
 
 function supp(link) {
-    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[supp]</font></a>`);
+    document.write(sup("supp", link));
 }
 
 function project(link) {
-    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[project]</font></a>`);
+    document.write(sup("project", link));
 }
 
 function bibtex(link) {
-    document.write(`<a target='_blank' href="${link}"><font size="${button_fontsize}">[bibtex]</font></a>`);
+    document.write(sup("bibtex", link));
 }
+
 function hl(text) {
     document.write(`<font color="#A31F34">${text}</font>`);
 }
