@@ -196,7 +196,7 @@ section.special, article.special {
 header p {
     color: #777;
     position: relative;
-    margin: 0 0 1.6875em 0;
+    margin: 0 0 1.5em 0;
 }
 
 header h2 + p {
@@ -925,8 +925,8 @@ input[type="button"]:disabled,
 
 .features article {
     border-top: solid 3px #f4f4f4;
-    margin-bottom: 1.25em;
-    padding-top: 1.25em;
+    margin-bottom: 1em;
+    padding-top: 1em;
 }
 
 .features article:first-child {
