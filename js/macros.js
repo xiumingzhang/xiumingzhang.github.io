@@ -15,6 +15,9 @@ function getConst(id) {
         case "google_res":
             document.write("<a target='_blank' href=\"https://research.google/\">Google Research</a>");
             break;
+        case "i2r":
+            document.write("<a target='_blank' href=\"https://www.a-star.edu.sg/i2r\">Institute for Infocomm Research</a>");
+            break;
         case "yunta_hikey":
             document.write("<a target='_blank' href=\"https://ai.google/research/people/105312\">Yun-Ta Tsai</a>");
             break;
