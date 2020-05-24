@@ -3,10 +3,10 @@ function getConst(id) {
         case "me":
             document.write("<u>Xiuming Zhang</u>");
             break;
-        case "bill_hikey":
+        case "freeman_hikey":
             document.write("<a target='_blank' href=\"http://billf.mit.edu/\">William T. Freeman</a>");
             break;
-        case "bill":
+        case "freeman":
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://billf.mit.edu/\">William T. Freeman</a>");
             break;
         case "mit":
@@ -18,16 +18,28 @@ function getConst(id) {
         case "i2r":
             document.write("<a target='_blank' href=\"https://www.a-star.edu.sg/i2r\">Institute for Infocomm Research</a>");
             break;
-        case "yunta_hikey":
-            document.write("<a target='_blank' href=\"https://ai.google/research/people/105312\">Yun-Ta Tsai</a>");
+        case "yunta":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://research.google/people/105312/\">Yun-Ta Tsai</a>");
             break;
-        case "jon_hikey":
+        case "yunta_hikey":
+            document.write("<a target='_blank' href=\"https://research.google/people/105312/\">Yun-Ta Tsai</a>");
+            break;
+        case "barron":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://jonbarron.info/\">Jonathan T. Barron</a>");
+            break;
+        case "barron_hikey":
             document.write("<a target='_blank' href=\"https://jonbarron.info/\">Jonathan T. Barron</a>");
+            break;
+        case "tianfan":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://people.csail.mit.edu/tfxue/\">Tianfan Xue</a>");
             break;
         case "tianfan_hikey":
             document.write("<a target='_blank' href=\"https://people.csail.mit.edu/tfxue/\">Tianfan Xue</a>");
             break;
-        case "thomas_hikey":
+        case "yeo":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://sites.google.com/view/yeolab/thomas\">B. T. Thomas Yeo</a>");
+            break;
+        case "yeo_hikey":
             document.write("<a target='_blank' href=\"https://sites.google.com/view/yeolab/thomas\">B. T. Thomas Yeo</a>");
             break;
         case "mosculp-bbc":
@@ -57,11 +69,23 @@ function getConst(id) {
         case "yikai":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://scholar.google.com/citations?user=0EVzwD8AAAAJ&hl=en\">Yikai Li</a>");
             break;
-        case "josh":
+        case "tenenbaum":
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://web.mit.edu/cocosci/josh.html\">Joshua B. Tenenbaum</a>");
             break;
         case "jiajun":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://jiajunwu.com/\">Jiajun Wu</a>");
+            break;
+        case "xuaner":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://people.eecs.berkeley.edu/~cecilia77/\">Xuaner (Cecilia) Zhang</a>");
+            break;
+        case "jacobs":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"http://graphics.stanford.edu/~dejacobs/\">David E. Jacobs</a>");
+            break;
+        case "pandey":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://research.google/people/106687/\">Rohit Pandey</a>");
+            break;
+        case "ren":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html\">Ren Ng</a>");
             break;
         case "iccv":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/International_Conference_on_Computer_Vision\">ICCV</a>")
@@ -72,10 +96,7 @@ function getConst(id) {
         case "nanbo":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://scholar.google.com.sg/citations?user=odaBvWAAAAAJ&hl=en\">Nanbo Sun</a>");
             break;
-        case "thomas":
-            document.write("<a class=\"lowkey\" target='_blank' href=\"https://sites.google.com/view/yeolab/thomas\">B. T. Thomas Yeo</a>");
-            break;
-        case "beth":
+        case "mormino":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://med.stanford.edu/profiles/elizabeth-mormino\">Elizabeth C. Mormino</a>");
             break;
         case "zhoutong":
@@ -87,19 +108,16 @@ function getConst(id) {
         case "nips":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/Conference_on_Neural_Information_Processing_Systems\">NeurIPS</a>");
             break;
-        case "tali":
+        case "dekel":
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://people.csail.mit.edu/talidekel/\">Tali Dekel</a>");
             break;
-        case "tianfan":
-            document.write("<a class=\"lowkey\" target='_blank' href=\"https://people.csail.mit.edu/tfxue/\">Tianfan Xue</a>");
-            break;
-        case "andrew":
+        case "owens":
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://andrewowens.com/\">Andrew Owens</a>");
             break;
         case "qiurui":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://scholar.google.com/citations?user=BxqV_RsAAAAJ&hl=en\">Qiurui He</a>");
             break;
-        case "stefanie":
+        case "mueller":
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://stefaniemueller.org/\">Stefanie Mueller</a>");
             break;
         case "uist":
@@ -114,10 +132,13 @@ function getConst(id) {
         case "cvpr":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition\">CVPR</a>");
             break;
-        case "reisa":
+        case "siggraph":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/SIGGRAPH\">SIGGRAPH</a>");
+            break;
+        case "sperling":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://www.nmr.mgh.harvard.edu/user/5647\">Reisa A. Sperling</a>");
             break;
-        case "mert":
+        case "sabuncu":
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://sabuncu.engineering.cornell.edu/\">Mert R. Sabuncu</a>");
             break;
         case "pnas":
@@ -130,7 +151,7 @@ function getConst(id) {
             document.write("<a target='_blank' href=\"http://www.upi.com/Health_News/2016/10/07/Brain-atrophy-patterns-may-explain-diversity-in-Alzheimers-symptoms/9771475867874/\">UPI</a>");
             break;
         default:
-            document.write("UNDEFINED");
+            document.write("<font color=\"#FF0000\">UNDEFINED</font>");
     }
 }
 
