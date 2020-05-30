@@ -177,6 +177,10 @@ function paper(link) {
     document.write(sup("paper", link));
 }
 
+function thesis(link) {
+    document.write(sup("thesis", link));
+}
+
 function code(link) {
     document.write(sup("code", link));
 }
