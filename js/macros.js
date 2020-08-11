@@ -18,6 +18,21 @@ function getConst(id) {
         case "i2r":
             document.write("<a target='_blank' href=\"https://www.a-star.edu.sg/i2r\">Institute for Infocomm Research</a>");
             break;
+        case "fanello":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"http://www.seanfanello.it/\">Sean Fanello</a>");
+            break;
+        case "tiancheng":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"http://kevinkingo.com/\">Tiancheng Sun</a>");
+            break;
+        case "rhemann":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://scholar.google.com/citations?user=5D0_pjcAAAAJ&hl=en\">Christoph Rhemann</a>");
+            break;
+        case "debevec":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"http://www.pauldebevec.com/\">Paul Debevec</a>");
+            break;
+        case "ramamoorthi":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"http://cseweb.ucsd.edu/~ravir/\">Ravi Ramamoorthi</a>");
+            break;
         case "yunta":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://research.google/people/105312/\">Yun-Ta Tsai</a>");
             break;
@@ -132,6 +147,9 @@ function getConst(id) {
         case "cvpr":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition\">CVPR</a>");
             break;
+        case "arxiv":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/ArXiv\">arXiv</a>");
+            break;
         case "siggraph":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/SIGGRAPH\">SIGGRAPH</a>");
             break;
@@ -175,6 +193,14 @@ function sup(text, link) {
 
 function paper(link) {
     document.write(sup("paper", link));
+}
+
+function video(link) {
+    document.write(sup("video", link));
+}
+
+function talk(link) {
+    document.write(sup("talk", link));
 }
 
 function thesis(link) {
