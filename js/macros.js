@@ -195,6 +195,10 @@ function paper(link) {
     document.write(sup("paper", link));
 }
 
+function poster(link) {
+    document.write(sup("poster", link));
+}
+
 function video(link) {
     document.write(sup("video", link));
 }
