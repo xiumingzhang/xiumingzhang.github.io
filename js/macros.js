@@ -153,6 +153,9 @@ function getConst(id) {
         case "siggraph":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/SIGGRAPH\">SIGGRAPH</a>");
             break;
+        case "siggraph_asia":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/SIGGRAPH\">SIGGRAPH Asia</a>");
+            break;
         case "sperling":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://www.nmr.mgh.harvard.edu/user/5647\">Reisa A. Sperling</a>");
             break;
