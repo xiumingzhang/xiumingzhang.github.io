@@ -150,6 +150,9 @@ function getConst(id) {
         case "arxiv":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/ArXiv\">arXiv</a>");
             break;
+        case "tog":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/ACM_Transactions_on_Graphics\">TOG</a>");
+            break;
         case "siggraph":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/SIGGRAPH\">SIGGRAPH</a>");
             break;
