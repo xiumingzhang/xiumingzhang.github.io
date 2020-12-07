@@ -34,10 +34,16 @@ function getConst(id) {
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://cseweb.ucsd.edu/~ravir/\">Ravi Ramamoorthi</a>");
             break;
         case "yunta":
-            document.write("<a class=\"lowkey\" target='_blank' href=\"https://research.google/people/105312/\">Yun-Ta Tsai</a>");
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://scholar.google.com/citations?user=7fUcF9UAAAAJ&hl=en\">Yun-Ta Tsai</a>");
             break;
         case "yunta_hikey":
-            document.write("<a target='_blank' href=\"https://research.google/people/105312/\">Yun-Ta Tsai</a>");
+            document.write("<a target='_blank' href=\"https://scholar.google.com/citations?user=7fUcF9UAAAAJ&hl=en\">Yun-Ta Tsai</a>");
+            break;
+        case "pratul":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://people.eecs.berkeley.edu/~pratul/\">Pratul P. Srinivasan</a>");
+            break;
+        case "boyang":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://boyangdeng.com/\">Boyang Deng</a>");
             break;
         case "barron":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://jonbarron.info/\">Jonathan T. Barron</a>");
