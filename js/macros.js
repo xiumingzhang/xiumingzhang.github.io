@@ -160,10 +160,10 @@ function getConst(id) {
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/ACM_Transactions_on_Graphics\">TOG</a>");
             break;
         case "siggraph":
-            document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/SIGGRAPH\">SIGGRAPH</a>");
+            document.write("Proc. <a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/SIGGRAPH\">SIGGRAPH</a>");
             break;
         case "siggraph_asia":
-            document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/SIGGRAPH\">SIGGRAPH Asia</a>");
+            document.write("Proc. <a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/SIGGRAPH\">SIGGRAPH Asia</a>");
             break;
         case "sperling":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://www.nmr.mgh.harvard.edu/user/5647\">Reisa A. Sperling</a>");
