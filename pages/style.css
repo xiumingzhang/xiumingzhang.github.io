@@ -22,6 +22,10 @@ body, input, select, textarea {
     line-height: 1.75em;
 }
 
+w {
+    color: #AAA;
+}
+
 a {
     -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;

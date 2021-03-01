@@ -180,6 +180,9 @@ function getConst(id) {
         case "ad-upi":
             document.write("<a target='_blank' href=\"http://www.upi.com/Health_News/2016/10/07/Brain-atrophy-patterns-may-explain-diversity-in-Alzheimers-symptoms/9771475867874/\">UPI</a>");
             break;
+        case "email":
+            document.write("xiuming <w>at</w> csail <w>dot</w> mit <w>dot</w> edu");
+            break;
         default:
             document.write("<font color=\"#FF0000\">UNDEFINED</font>");
     }
