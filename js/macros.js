@@ -73,13 +73,13 @@ function getConst(id) {
             document.write("<a target='_blank' href=\"https://news.mit.edu/2018/creating-3-d-printed-motion-sculptures-from-2-d-videos-mit-csail-0919\">MIT</a>");
             break;
         case "mosculp-homepage":
-            document.write("<a target='_blank' href=\"http://mosculp.csail.mit.edu/assets/homepage.png\">the 9/19 MIT homepage</a>");
+            document.write("<a target='_blank' href=\"assets/mosculp/mit-homepage.png\">the 9/19 MIT homepage</a>");
             break;
         case "ad-eurekalert":
             document.write("<a target='_blank' href=\"http://www.eurekalert.org/pub_releases/2016-10/mgh-dba100716.php\">EurekAlert!</a>");
             break;
         case "ad-mgh":
-            document.write("<a target='_blank' href=\"https://web.archive.org/web/20171117211844/http://www.massgeneral.org/about/pressrelease.aspx?id=2002\">MGH/HMS</a>");
+            document.write("<a target='_blank' href=\"assets/ad-factors/mgh.pdf\">MGH/HMS</a>");
             break;
         case "ad-nus":
             document.write("<a target='_blank' href=\"http://news.nus.edu.sg/highlights/model-illuminates-alzheimers-disease\">NUS</a>");
