@@ -1084,7 +1084,7 @@ input[type="button"]:disabled,
 /* One */
 
 #one:before {
-    background-image: url("../images/banners/csail2.jpg");
+    background-image: url("../images/banners/mosculp.jpg");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
