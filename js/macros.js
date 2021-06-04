@@ -230,6 +230,10 @@ function code(link) {
     document.write(sup("code", link));
 }
 
+function demo(link) {
+    document.write(sup("demo", link));
+}
+
 function doc(link) {
     document.write(sup("doc", link));
 }
