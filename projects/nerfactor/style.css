@@ -22,11 +22,11 @@ body, input, select, textarea {
 }
 
 a {
-    -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -moz-transition: color .2s ease-in-out, border-color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out, border-color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out, border-color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out, border-color .2s ease-in-out;
+    transition: color .2s ease-in-out, border-color .2s ease-in-out;
     border-bottom: solid 2px #CCC;
     color: inherit;
     text-decoration: none;
@@ -75,7 +75,7 @@ p.venue {
 }
 
 p.caption {
-    margin: 0.7em 0 0 0;
+    margin: .7em 0 0 0;
     font-size: .9em;
     text-align: center;
     line-height: 1.2em;
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
     font-weight: 500;
     line-height: 1em;
-    margin: 0 0 0.5625em 0;
+    margin: 0 0 .5625em 0;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -116,7 +116,7 @@ h4 {
 }
 
 h5 {
-    font-size: 0.9em;
+    font-size: .9em;
     line-height: 1.5em;
 }
 
@@ -126,13 +126,13 @@ h6 {
 }
 
 sub {
-    font-size: 0.8em;
+    font-size: .8em;
     position: relative;
-    top: 0.5em;
+    top: .5em;
 }
 
 sup {
-    font-size: 0.7em;
+    font-size: .7em;
     position: relative;
     top: 0em;
 }
@@ -151,7 +151,7 @@ blockquote {
     border-left: solid 8px #1B1B1B;
     font-style: italic;
     margin: 0 0 2.25em 0;
-    padding: 0.5em 0 0.5em 2em;
+    padding: .5em 0 .5em 2em;
 }
 
 code {
@@ -159,15 +159,15 @@ code {
     border-radius: 5px;
     color: #555;
     font-family: "Source Code Pro", monospace;
-    font-size: 0.9em;
-    margin: 0 0.2em;
-    padding: 0em 0.5em;
+    font-size: .9em;
+    margin: 0 .2em;
+    padding: 0em .5em;
 }
 
 pre {
     font-family: "Source Code Pro", monospace;
     font-size: .7em;
-    margin: 1em 0 0 0;
+    margin: -2em 0 0 0;
     padding: 0 0 0 0;
     white-space: pre-wrap;
     line-height: 1.5em
@@ -176,9 +176,8 @@ pre {
 pre code {
     -webkit-overflow-scrolling: touch;
     display: block;
-    line-height: 1.5em;
     overflow-x: auto;
-    padding: 1em 1.5em;
+    padding: 1em 1em;
 }
 
 .align-left {
@@ -192,6 +191,7 @@ pre code {
 .align-right {
     text-align: right;
 }
+
 
 /* Section/Article */
 
@@ -207,21 +207,21 @@ header p {
 
 header h2 + p {
     font-size: 1.25em;
-    margin-top: -0.5em;
+    margin-top: -.5em;
     line-height: 1.5em;
 }
 
 header h3 + p {
     font-size: 1.1em;
-    margin-top: -0.35em;
+    margin-top: -.35em;
     line-height: 1.5em;
 }
 
 header h4 + p,
 header h5 + p,
 header h6 + p {
-    font-size: 0.9em;
-    margin-top: -0.25em;
+    font-size: .9em;
+    margin-top: -.25em;
     line-height: 1.5em;
 }
 
@@ -234,8 +234,9 @@ header.major h2 + p {
     color: #333;
     font-size: 1.75em;
     font-weight: 700;
-    margin-top: -0.75em;
+    margin-top: -.75em;
 }
+
 
 /* List */
 
@@ -246,17 +247,17 @@ ol {
 }
 
 ol li {
-    padding-left: 0.25em;
+    padding-left: .25em;
 }
 
 ul {
     list-style: disc;
-    margin: 0 0 0 0;
-    padding-left: 1em;
+    margin: -1.5em 0 0 0;
+    padding-left: 4em;
 }
 
 ul li {
-    padding-left: 0.5em;
+    padding-left: .5em;
 }
 
 ul.alt {
@@ -266,7 +267,7 @@ ul.alt {
 
 ul.alt li {
     border-top: solid 2px #B0B0B0;
-    padding: 0.5em 0;
+    padding: .5em 0;
 }
 
 ul.alt li:first-child {
@@ -283,7 +284,7 @@ ul.feature-icons li {
     text-decoration: none;
     display: inline-block;
     margin: 0 0 1.6875em 0;
-    padding: 0.35em 0 0 3.5em;
+    padding: .35em 0 0 3.5em;
     position: relative;
     width: 48%;
 }
@@ -347,7 +348,7 @@ ul.actions li:last-child {
 }
 
 ul.actions.small li {
-    padding: 0 0.5625em 0 0;
+    padding: 0 .5625em 0 0;
 }
 
 ul.actions.vertical li {
@@ -364,7 +365,7 @@ ul.actions.vertical li > * {
 }
 
 ul.actions.vertical.small li {
-    padding: 0.5625em 0 0 0;
+    padding: .5625em 0 0 0;
 }
 
 ul.actions.vertical.small li:first-child {
@@ -389,8 +390,8 @@ ul.actions.fit li > * {
 }
 
 ul.actions.fit.small {
-    margin-left: -0.5625em;
-    width: calc(100% + 0.5625em);
+    margin-left: -.5625em;
+    width: calc(100% + .5625em);
 }
 
 ul.actions.fit.small li {
@@ -412,6 +413,7 @@ dl {
 table {
     margin: 0 0 0 0;
     width: 100%;
+    table-layout: fixed;
 }
 
 table tbody tr {
@@ -428,15 +430,15 @@ table tbody tr:nth-child(2n + 1) {
 
 table td {
     background-color: #FFF;
-    padding: 0 0 0 2em;
+    padding: 0 .2em .2em .2em;
     text-align: center;
 }
 
 table th {
     color: #FFF;
-    font-size: 0.9em;
+    font-size: .9em;
     font-weight: 700;
-    padding: 0 0.75em 0.75em 0.75em;
+    padding: .2em .2em .2em .2em;
     text-align: center;
 }
 
@@ -454,6 +456,10 @@ table td.rightalign {
 
 table td.leftalign {
     text-align: left;
+}
+
+tr.padbottom>td {
+    padding-bottom: 2em;
 }
 
 table.authoraffliation {
@@ -496,196 +502,12 @@ table.alt tfoot {
     border-top: 0;
 }
 
-/* Button */
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-.button {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -o-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    background-color: #000;
-    border-radius: 5px;
-    border: 0;
-    color: #5CE0CB !important;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 700;
-    height: 2.75em;
-    line-height: 2.75em;
-    padding: 0 1.5em;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:hover {
-    background-color: #3D3F40;
-    color: #5CE0CB !important;
-}
-
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active,
-.button:active {
-    background-color: #757473;
-}
-
-input[type="submit"].icon,
-input[type="reset"].icon,
-input[type="button"].icon,
-.button.icon {
-    padding-left: 1.35em;
-}
-
-input[type="submit"].icon:before,
-input[type="reset"].icon:before,
-input[type="button"].icon:before,
-.button.icon:before {
-    margin-right: 0.5em;
-}
-
-input[type="submit"].fit,
-input[type="reset"].fit,
-input[type="button"].fit,
-.button.fit {
-    display: block;
-    margin: 0 0 1.125em 0;
-    width: 100%;
-}
-
-input[type="submit"].small,
-input[type="reset"].small,
-input[type="button"].small,
-.button.small {
-    font-size: 0.8em;
-}
-
-input[type="submit"].big,
-input[type="reset"].big,
-input[type="button"].big,
-.button.big {
-    font-size: 1.35em;
-}
-
-input[type="submit"].alt,
-input[type="reset"].alt,
-input[type="button"].alt,
-.button.alt {
-    background-color: transparent;
-    box-shadow: inset 0 0 0 2px #1B1B1B;
-    color: #CCC !important;
-}
-
-input[type="submit"].alt:hover,
-input[type="reset"].alt:hover,
-input[type="button"].alt:hover,
-.button.alt:hover {
-    background-color: #B0B0B0;
-    color: #CCC !important;
-}
-
-input[type="submit"].alt:active,
-input[type="reset"].alt:active,
-input[type="button"].alt:active,
-.button.alt:active {
-    background-color: #151515;
-}
-
-input[type="submit"].alt.icon:before,
-input[type="reset"].alt.icon:before,
-input[type="button"].alt.icon:before,
-.button.alt.icon:before {
-    color: #555;
-}
-
-input[type="submit"].special,
-input[type="reset"].special,
-input[type="button"].special,
-.button.special {
-    background-color: #5CE0CB;
-    color: #000 !important;
-}
-
-input[type="submit"].special:hover,
-input[type="reset"].special:hover,
-input[type="button"].special:hover,
-.button.special:hover {
-    background-color: #3D3F40;
-}
-
-input[type="submit"].special:active,
-input[type="reset"].special:active,
-input[type="button"].special:active,
-.button.special:active {
-    background-color: #757473;
-}
-
-input[type="submit"].disabled, input[type="submit"]:disabled,
-input[type="reset"].disabled,
-input[type="reset"]:disabled,
-input[type="button"].disabled,
-input[type="button"]:disabled,
-.button.disabled,
-.button:disabled {
-    background-color: #AAA !important;
-    box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
-    color: #000 !important;
-    cursor: default;
-    opacity: 0.25;
-}
-
-/* Features */
-
-.features article {
-    border-top: solid 3px #B0B0B0;
-    margin-bottom: 2.25em;
-    padding-top: 2.25em;
-}
-
-.features article:first-child {
-    border-top: 0;
-    padding-top: 0;
-}
-
-.features article .image {
-    display: inline-block;
-    padding-right: 2.5em;
-    vertical-align: middle;
-    width: 48%;
-}
-
-.features article .image img {
-    display: block;
-    width: 100%;
-}
-
-.features article .inner {
-    display: inline-block;
-    vertical-align: middle;
-    width: 50%;
-}
-
-.features article .inner > :last-child {
-    margin-bottom: 0;
-}
 
 /* Text Box */
 
 div.card {
     border-radius: 10px;
-    border: 0.1em solid #3D3F40;
+    border: .1em solid #3D3F40;
     margin: 1.3em auto;
     padding: 1.3em 1.5em 1.5em 1.5em;
     width: 85%;
@@ -733,4 +555,13 @@ div.copyright_card {
     max-width: 1920px;
     text-align: center;
     font-size: .9em;
+}
+
+
+/* Others */
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
 }
