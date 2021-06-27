@@ -7,16 +7,16 @@ Modified from [the Read Only template](https://html5up.net/read-only) of
 
 ## What It Looks Like
 
-See this in action [here](http://people.csail.mit.edu/xiuming/).
+See it in action [here](http://people.csail.mit.edu/xiuming/).
 
 
 ## Usage
 
-Please feel free to use this for your homepage, but please attribute the source
-to [my homepage](http://people.csail.mit.edu/xiuming/)
+Please feel free to use this for your homepage, but on your page, please
+attribute the source to [my homepage](http://people.csail.mit.edu/xiuming/)
 and [HTML5 UP](https://html5up.net/).
 
-Make sure to either remove the analytics block or replace it with your own. It
+Also, make sure to either remove the analytics block or replace it with your own. It
 can be found at the top of [`index.html`](./index.html). If you don't take care
 of this, your traffic data will appear on my Google Analytics dashboard --
 a situation that bothers both of us. 
