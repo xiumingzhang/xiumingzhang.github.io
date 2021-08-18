@@ -75,8 +75,8 @@ function getConst(id) {
         case "mosculp-homepage":
             document.write("<a target='_blank' href=\"assets/mosculp/mit-homepage.png\">the 9/19 MIT homepage</a>");
             break;
-        case "ad-eurekalert":
-            document.write("<a target='_blank' href=\"http://www.eurekalert.org/pub_releases/2016-10/mgh-dba100716.php\">EurekAlert!</a>");
+        case "ad-pt":
+            document.write("<a target='_blank' href=\"https://www.psychologytoday.com/intl/blog/the-athletes-way/201610/alzheimers-study-links-triad-brain-areas-cognition\">Psychology Today</a>");
             break;
         case "ad-mgh":
             document.write("<a target='_blank' href=\"assets/ad-factors/mgh.pdf\">MGH/HMS</a>");
