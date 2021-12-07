@@ -6,14 +6,26 @@ function getConst(id) {
         case "freeman_hikey":
             document.write("<a target='_blank' href=\"http://billf.mit.edu/\">William T. Freeman</a>");
             break;
+        case "levoy_hikey":
+            document.write("<a target='_blank' href=\"http://graphics.stanford.edu/~levoy/\">Marc Levoy</a>");
+            break;
         case "freeman":
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://billf.mit.edu/\">William T. Freeman</a>");
+            break;
+        case "adobe":
+            document.write("<a target='_blank' href=\"https://www.adobe.com/\">Adobe</a>");
+            break;
+        case "csail":
+            document.write("<a target='_blank' href=\"http://www.csail.mit.edu\">Computer Science and Artificial Intelligence Laboratory (CSAIL)</a>");
             break;
         case "mit":
             document.write("<a target='_blank' href=\"http://www.mit.edu\">Massachusetts Institute of Technology (MIT)</a>");
             break;
-        case "google_res":
-            document.write("<a target='_blank' href=\"https://research.google/\">Google Research</a>");
+        case "mit_short":
+            document.write("<a target='_blank' href=\"http://www.mit.edu\">MIT</a>");
+            break;
+        case "google":
+            document.write("<a target='_blank' href=\"https://research.google/\">Google</a>");
             break;
         case "i2r":
             document.write("<a target='_blank' href=\"https://www.a-star.edu.sg/i2r\">Institute for Infocomm Research</a>");
@@ -63,25 +75,25 @@ function getConst(id) {
         case "yeo_hikey":
             document.write("<a target='_blank' href=\"https://sites.google.com/view/yeolab/thomas\">B. T. Thomas Yeo</a>");
             break;
-        case "mosculp-bbc":
+        case "mosculp_bbc":
             document.write("<a target='_blank' href=\"https://www.bbc.com/news/av/technology-45552015/creating-3d-sculptures-from-2d-video-and-other-news\">BBC</a>");
             break;
-        case "mosculp-forbes":
+        case "mosculp_forbes":
             document.write("<a target='_blank' href=\"https://www.forbes.com/sites/jenniferhicks/2018/09/25/these-researchers-turned-2d-videos-into-3d-motion-sculptures\">Forbes</a>");
             break;
-        case "mosculp-mit":
+        case "mosculp_mit":
             document.write("<a target='_blank' href=\"https://news.mit.edu/2018/creating-3-d-printed-motion-sculptures-from-2-d-videos-mit-csail-0919\">MIT</a>");
             break;
-        case "mosculp-homepage":
-            document.write("<a target='_blank' href=\"assets/mosculp/mit-homepage.png\">the 9/19 MIT homepage</a>");
+        case "mosculp_homepage":
+            document.write("<a target='_blank' href=\"assets/mosculp/mit_homepage.png\">the 9/19 MIT homepage</a>");
             break;
-        case "ad-pt":
+        case "ad_pt":
             document.write("<a target='_blank' href=\"https://www.psychologytoday.com/intl/blog/the-athletes-way/201610/alzheimers-study-links-triad-brain-areas-cognition\">Psychology Today</a>");
             break;
-        case "ad-mgh":
-            document.write("<a target='_blank' href=\"assets/ad-factors/mgh.pdf\">MGH/HMS</a>");
+        case "ad_mgh":
+            document.write("<a target='_blank' href=\"assets/ad_factors/mgh.pdf\">MGH/HMS</a>");
             break;
-        case "ad-nus":
+        case "ad_nus":
             document.write("<a target='_blank' href=\"http://news.nus.edu.sg/highlights/model-illuminates-alzheimers-disease\">NUS</a>");
             break;
         case "jiayuan":
@@ -177,11 +189,17 @@ function getConst(id) {
         case "ismrm":
             document.write("<a target='_blank' href=\"https://en.wikipedia.org/wiki/International_Society_of_Magnetic_Resonance_in_Medicine\">ISMRM</a>");
             break;
-        case "ad-upi":
+        case "ad_upi":
             document.write("<a target='_blank' href=\"http://www.upi.com/Health_News/2016/10/07/Brain-atrophy-patterns-may-explain-diversity-in-Alzheimers-symptoms/9771475867874/\">UPI</a>");
             break;
-        case "email":
+        case "email_csail":
             document.write("xiuming <w>at</w> csail <w>dot</w> mit <w>dot</w> edu");
+            break;
+        case "email_adobe":
+            document.write("xiumingz <w>at</w> adobe <w>dot</w> com");
+            break;
+        case "email_work":
+            document.write("xiuming6zhang <w>at</w> gmail <w>dot</w> com");
             break;
         default:
             document.write("<font color=\"#FF0000\">UNDEFINED</font>");
