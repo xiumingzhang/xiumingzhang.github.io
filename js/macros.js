@@ -268,6 +268,10 @@ function bibtex(link) {
     document.write(sup("bibtex", link));
 }
 
+function patent(link) {
+    document.write(sup("patent", link));
+}
+
 function hl(text) {
     document.write(`<font color="#A31F34">${text}</font>`);
 }
