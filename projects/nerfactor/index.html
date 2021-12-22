@@ -23,7 +23,7 @@
 <body>
     <h1><b>NeRFactor</b>: Neural Factorization of Shape and Reflectance<br/>Under an Unknown Illumination</h1>
     <div class="venue_card">
-        <p class="venue">arXiv</p>
+        <p class="venue">TOG 2021 (Proc. SIGGRAPH Asia)</p>
     </div>
 
     <div class="author_card">
@@ -51,7 +51,28 @@
         <h2>Abstract</h2>
         <p><table>
             <tr class="padbottom">
-                We address the problem of recovering the shape and spatially-varying reflectance of an object from posed multi-view images of the object illuminated by one unknown lighting condition. This enables the rendering of novel views of the object under arbitrary environment lighting and editing of the object's material properties. The key to our approach, which we call Neural Radiance Factorization (NeRFactor), is to distill the volumetric geometry of a Neural Radiance Field (NeRF) [Mildenhall et al. 2020] representation of the object into a surface representation and then jointly refine the geometry while solving for the spatially-varying reflectance and the environment lighting. Specifically, NeRFactor recovers 3D neural fields of surface normals, light visibility, albedo, and Bidirectional Reflectance Distribution Functions (BRDFs) without any supervision, using only a re-rendering loss, simple smoothness priors, and a data-driven BRDF prior learned from real-world BRDF measurements. By explicitly modeling light visibility, NeRFactor is able to separate shadows from albedo and synthesize realistic soft or hard shadows under arbitrary lighting conditions. NeRFactor is able to recover convincing 3D models for free-viewpoint relighting in this challenging and underconstrained capture setup for both synthetic and real scenes. Qualitative and quantitative experiments show that NeRFactor outperforms classic and deep learning-based state of the art across various tasks.</p>
+                We address the problem of recovering the shape and spatially-varying
+                reflectance of an object from multi-view images (and their camera poses) of an
+                object illuminated by one unknown lighting condition. This enables the
+                rendering of novel views of the object under arbitrary environment lighting and
+                editing of the object's material properties. The key to our approach, which we
+                call Neural Radiance Factorization (NeRFactor), is to distill the volumetric
+                geometry of a Neural Radiance Field (NeRF) [Mildenhall et al. 2020]
+                representation of the object into a surface representation and then jointly
+                refine the geometry while solving for the spatially-varying reflectance and
+                environment lighting. Specifically, NeRFactor recovers 3D neural fields of
+                surface normals, light visibility, albedo, and Bidirectional Reflectance
+                Distribution Functions (BRDFs) without any supervision, using only a
+                re-rendering loss, simple smoothness priors, and a data-driven BRDF prior
+                learned from real-world BRDF measurements. By explicitly modeling light
+                visibility, NeRFactor is able to separate shadows from albedo and synthesize
+                realistic soft or hard shadows under arbitrary lighting conditions. NeRFactor
+                is able to recover convincing 3D models for free-viewpoint relighting in this
+                challenging and underconstrained capture setup for both synthetic and real
+                scenes. Qualitative and quantitative experiments show that NeRFactor
+                outperforms classic and deep learning-based state of the art across various
+                tasks. Our videos, code, and data are available at
+                people.csail.mit.edu/xiuming/projects/nerfactor/.
             </tr>
             <tr><img src="assets/images/teaser.jpg" width="100%"></tr>
             <tr><p class="caption">
@@ -71,9 +92,10 @@
             <a target='_blank' href="http://billf.mit.edu/">William T. Freeman</a>,
             <a target='_blank' href="https://jonbarron.info/">Jonathan T. Barron</a>
             <br>
-            <b>arXiv</b>
+            <b>TOG 2021</b> (Proc. SIGGRAPH Asia)
             <br>
             <a target='_blank' href="https://arxiv.org/pdf/2106.01970.pdf">arXiv</a>&emsp;/&emsp;
+            <a target='_blank' href="https://dl.acm.org/doi/abs/10.1145/3478513.3480496">Publisher</a>&emsp;/&emsp;
             <a target='_blank' href="http://people.csail.mit.edu/xiuming/docs/bib/nerfactor.bib">BibTeX</a>
         </p>
         <!--
@@ -89,7 +111,10 @@
 </pre>
         </p>
         -->
-        <p class="caption"><i>v0 (06/01/2020)</i></p>
+        <!--
+        <p class="caption"><i>v0 (06/01/2021)</i></p>
+        -->
+        <p class="caption"><i>v1 (12/22/2021)</i></p>
     </div>
 
     <div class="card">
@@ -104,7 +129,17 @@
                 <iframe src="https://www.youtube.com/embed/UUVSPJlwhPg" allowfullscreen style="position:absolute;top:0;left:0"></iframe>
             </div>
         </p>
-        <p class="caption"><i>v0 (06/01/2020)</i></p>
+        <p class="caption"><i>v0 (06/01/2021)</i></p>
+    </div>
+
+    <div class="card">
+        <h2>Talk</h2>
+        <p>
+            <div style="position:relative;padding-top:60%;">
+                <iframe src="https://www.youtube.com/embed/vt_zQTxqmlk" allowfullscreen style="position:absolute;top:0;left:0"></iframe>
+            </div>
+        </p>
+        <p class="caption"><i>v1 (12/22/2021)</i></p>
     </div>
 
     <div class="card">
