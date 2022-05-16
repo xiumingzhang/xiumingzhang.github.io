@@ -1,399 +1,399 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
-    <title>NeRFactor</title>
-    <link rel="stylesheet" href="./style.css">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="icon" type="image/png" href="assets/logos/csail.ico">
-    <!-- Facebook -->
-    <meta property="og:image" content="assets/images/cover.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="512">
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://people.csail.mit.edu/xiuming/projects/nerfactor/"/>
-    <meta property="og:title" content="NeRFactor" />
-    <meta property="og:description" content="Project page for NeRFactor." />
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="NeRFactor" />
-    <meta name="twitter:description" content="Project page for NeRFactor." />
-    <meta name="twitter:image" content="assets/images/cover.jpg" />
+  <title>NeRFactor</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="icon" type="image/png" href="assets/logos/csail.ico">
+  <!-- Facebook -->
+  <meta property="og:image" content="assets/images/cover.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="512">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://people.csail.mit.edu/xiuming/projects/nerfactor/"/>
+  <meta property="og:title" content="NeRFactor" />
+  <meta property="og:description" content="Project page for NeRFactor." />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NeRFactor" />
+  <meta name="twitter:description" content="Project page for NeRFactor." />
+  <meta name="twitter:image" content="assets/images/cover.jpg" />
 </head>
 
 <body>
-    <h1><b>NeRFactor</b>: Neural Factorization of Shape and Reflectance<br/>Under an Unknown Illumination</h1>
-    <div class="venue_card">
-        <p class="venue">TOG 2021 (Proc. SIGGRAPH Asia)</p>
-    </div>
+  <h1><b>NeRFactor</b>: Neural Factorization of Shape and Reflectance<br/>Under an Unknown Illumination</h1>
+  <div class="venue_card">
+    <p class="venue">TOG 2021 (Proc. SIGGRAPH Asia)</p>
+  </div>
 
-    <div class="author_card">
-        <p class="author">
-            <a target='_blank' href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>&nbsp;<sup>1</sup>&emsp;&emsp;
-            <a target='_blank' href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>&nbsp;<sup>2</sup>&emsp;&emsp;
-            <a target='_blank' href="https://boyangdeng.com/">Boyang Deng</a>&nbsp;<sup>2</sup>&emsp;&emsp;
-            <a target='_blank' href="http://www.pauldebevec.com/">Paul Debevec</a>&nbsp;<sup>2</sup>&emsp;&emsp;
-            <a target='_blank' href="http://billf.mit.edu/">William T. Freeman</a>&nbsp;<sup>1,&nbsp;2</sup>&emsp;&emsp;
-            <a target='_blank' href="https://jonbarron.info/">Jonathan T. Barron</a>&nbsp;<sup>2</sup>
-            <table class="authoraffliation">
-                <tr>
-                    <td><sup>1</sup>&nbsp;<a target='_blank' href="https://www.csail.mit.edu/">MIT CSAIL</a></td>
-                    <td><sup>2</sup>&nbsp;<a target='_blank' href="https://research.google/">Google Research</a></td>
-                </tr>
-                <tr>
-                    <td><img src="assets/logos/mit.png" height="40em">&emsp;<img src="assets/logos/csail.png" height="40em"></td>
-                    <td><img src="assets/logos/google_research.png" height="40em"></td>
-                </tr>
-            </table>
-        </p>
-    </div>
+  <div class="author_card">
+    <p class="author">
+    <a target='_blank' href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>&nbsp;<sup>1</sup>&emsp;&emsp;
+    <a target='_blank' href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>&nbsp;<sup>2</sup>&emsp;&emsp;
+    <a target='_blank' href="https://boyangdeng.com/">Boyang Deng</a>&nbsp;<sup>2</sup>&emsp;&emsp;
+    <a target='_blank' href="http://www.pauldebevec.com/">Paul Debevec</a>&nbsp;<sup>2</sup>&emsp;&emsp;
+    <a target='_blank' href="http://billf.mit.edu/">William T. Freeman</a>&nbsp;<sup>1,&nbsp;2</sup>&emsp;&emsp;
+    <a target='_blank' href="https://jonbarron.info/">Jonathan T. Barron</a>&nbsp;<sup>2</sup>
+    <table class="authoraffliation">
+      <tr>
+        <td><sup>1</sup>&nbsp;<a target='_blank' href="https://www.csail.mit.edu/">MIT CSAIL</a></td>
+        <td><sup>2</sup>&nbsp;<a target='_blank' href="https://research.google/">Google Research</a></td>
+      </tr>
+      <tr>
+        <td><img src="assets/logos/mit.png" height="40em">&emsp;<img src="assets/logos/csail.png" height="40em"></td>
+        <td><img src="assets/logos/google_research.png" height="40em"></td>
+      </tr>
+    </table>
+    </p>
+  </div>
 
-    <div class="card">
-        <h2>Abstract</h2>
-        <p><table>
-            <tr class="padbottom">
-                We address the problem of recovering the shape and spatially-varying
-                reflectance of an object from multi-view images (and their camera poses) of an
-                object illuminated by one unknown lighting condition. This enables the
-                rendering of novel views of the object under arbitrary environment lighting and
-                editing of the object's material properties. The key to our approach, which we
-                call Neural Radiance Factorization (NeRFactor), is to distill the volumetric
-                geometry of a Neural Radiance Field (NeRF) [Mildenhall et al. 2020]
-                representation of the object into a surface representation and then jointly
-                refine the geometry while solving for the spatially-varying reflectance and
-                environment lighting. Specifically, NeRFactor recovers 3D neural fields of
-                surface normals, light visibility, albedo, and Bidirectional Reflectance
-                Distribution Functions (BRDFs) without any supervision, using only a
-                re-rendering loss, simple smoothness priors, and a data-driven BRDF prior
-                learned from real-world BRDF measurements. By explicitly modeling light
-                visibility, NeRFactor is able to separate shadows from albedo and synthesize
-                realistic soft or hard shadows under arbitrary lighting conditions. NeRFactor
-                is able to recover convincing 3D models for free-viewpoint relighting in this
-                challenging and underconstrained capture setup for both synthetic and real
-                scenes. Qualitative and quantitative experiments show that NeRFactor
-                outperforms classic and deep learning-based state of the art across various
-                tasks. Our videos, code, and data are available at
-                people.csail.mit.edu/xiuming/projects/nerfactor/.
-            </tr>
-            <tr><img src="assets/images/teaser.jpg" width="100%"></tr>
-            <tr><p class="caption">
-                Given a set of posed images of an object captured from multiple views under just one unknown illumination condition (left), Neural Radiance Factorization (NeRFactor) is able to factorize the scene into 3D neural fields of surface normals, light visibility, albedo, and material (center), which enables applications such as free-viewpoint relighting and material editing (right).
-            </p></tr>
-        </table></p>
-    </div>
+  <div class="card">
+    <h2>Abstract</h2>
+    <p><table>
+      <tr class="padbottom">
+        We address the problem of recovering the shape and spatially-varying
+        reflectance of an object from multi-view images (and their camera poses) of an
+        object illuminated by one unknown lighting condition. This enables the
+        rendering of novel views of the object under arbitrary environment lighting and
+        editing of the object's material properties. The key to our approach, which we
+        call Neural Radiance Factorization (NeRFactor), is to distill the volumetric
+        geometry of a Neural Radiance Field (NeRF) [Mildenhall et al. 2020]
+        representation of the object into a surface representation and then jointly
+        refine the geometry while solving for the spatially-varying reflectance and
+        environment lighting. Specifically, NeRFactor recovers 3D neural fields of
+        surface normals, light visibility, albedo, and Bidirectional Reflectance
+        Distribution Functions (BRDFs) without any supervision, using only a
+        re-rendering loss, simple smoothness priors, and a data-driven BRDF prior
+        learned from real-world BRDF measurements. By explicitly modeling light
+        visibility, NeRFactor is able to separate shadows from albedo and synthesize
+        realistic soft or hard shadows under arbitrary lighting conditions. NeRFactor
+        is able to recover convincing 3D models for free-viewpoint relighting in this
+        challenging and underconstrained capture setup for both synthetic and real
+        scenes. Qualitative and quantitative experiments show that NeRFactor
+        outperforms classic and deep learning-based state of the art across various
+        tasks. Our videos, code, and data are available at
+        people.csail.mit.edu/xiuming/projects/nerfactor/.
+      </tr>
+      <tr><img src="assets/images/teaser.jpg" width="100%"></tr>
+      <tr><p class="caption">
+        Given a set of posed images of an object captured from multiple views under just one unknown illumination condition (left), Neural Radiance Factorization (NeRFactor) is able to factorize the scene into 3D neural fields of surface normals, light visibility, albedo, and material (center), which enables applications such as free-viewpoint relighting and material editing (right).
+        </p></tr>
+    </table></p>
+  </div>
 
-    <div class="card">
-        <h2>Paper</h2>
-        <p class="pub">
-            <b>NeRFactor: Neural Factorization of Shape and Reflectance Under an Unknown Illumination</b><br>
-            <a target='_blank' href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
-            <a target='_blank' href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-            <a target='_blank' href="https://boyangdeng.com/">Boyang Deng</a>,
-            <a target='_blank' href="http://www.pauldebevec.com/">Paul Debevec</a>,
-            <a target='_blank' href="http://billf.mit.edu/">William T. Freeman</a>,
-            <a target='_blank' href="https://jonbarron.info/">Jonathan T. Barron</a>
-            <br>
-            <b>TOG 2021</b> (Proc. SIGGRAPH Asia)
-            <br>
-            <a target='_blank' href="https://arxiv.org/pdf/2106.01970.pdf">arXiv</a>&emsp;/&emsp;
-            <a target='_blank' href="https://dl.acm.org/doi/abs/10.1145/3478513.3480496">Publisher</a>&emsp;/&emsp;
-            <a target='_blank' href="http://people.csail.mit.edu/xiuming/docs/bib/nerfactor.bib">BibTeX</a>
-        </p>
-        <!--
-        <p>
-        BibTeX:
-        <pre>
+  <div class="card">
+    <h2>Paper</h2>
+    <p class="pub">
+    <b>NeRFactor: Neural Factorization of Shape and Reflectance Under an Unknown Illumination</b><br>
+    <a target='_blank' href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
+    <a target='_blank' href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+    <a target='_blank' href="https://boyangdeng.com/">Boyang Deng</a>,
+    <a target='_blank' href="http://www.pauldebevec.com/">Paul Debevec</a>,
+    <a target='_blank' href="http://billf.mit.edu/">William T. Freeman</a>,
+    <a target='_blank' href="https://jonbarron.info/">Jonathan T. Barron</a>
+    <br>
+    <b>TOG 2021</b> (Proc. SIGGRAPH Asia)
+    <br>
+    <a target='_blank' href="https://arxiv.org/pdf/2106.01970.pdf">arXiv</a>&emsp;/&emsp;
+    <a target='_blank' href="https://dl.acm.org/doi/abs/10.1145/3478513.3480496">Publisher</a>&emsp;/&emsp;
+    <a target='_blank' href="http://people.csail.mit.edu/xiuming/docs/bib/nerfactor.bib">BibTeX</a>
+    </p>
+    <!--
+      <p>
+      BibTeX:
+      <pre>
 @article{zhang2021nerfactor,
   title={NeRFactor: Neural Factorization of Shape and Reflectance Under an Unknown Illumination},
   author={Zhang, Xiuming and Srinivasan, Pratul P and Deng, Boyang and Debevec, Paul and Freeman, William T and Barron, Jonathan T},
   journal={arXiv preprint arXiv:2106.01970},
   year={2021}
 }
-</pre>
-        </p>
-        -->
-        <!--
+      </pre>
+      </p>
+      -->
+      <!--
         <p class="caption"><i>v0 (06/01/2021)</i></p>
-        -->
-        <p class="caption"><i>v1 (12/22/2021)</i></p>
+      -->
+      <p class="caption"><i>v1 (12/22/2021)</i></p>
+  </div>
+
+  <div class="card">
+    <h2>Video</h2>
+    <p>
+    Downloads:&emsp;
+    <a target='_blank' href="https://drive.google.com/file/d/1nPLhzUh7byjDlKOBKvaaeCGGGKlND3OL/view?usp=sharing">1080p (212 MB)</a>&ensp; / &ensp;
+    <a target='_blank' href="https://drive.google.com/file/d/1FmhKl-BaJQHAlQiw8HO_KGo_OMuaCOqf/view?usp=sharing">720p (154 MB)</a>
+    </p>
+    <p>
+    <div style="position:relative;padding-top:60%;">
+      <iframe src="https://www.youtube.com/embed/UUVSPJlwhPg" allowfullscreen style="position:absolute;top:0;left:0"></iframe>
     </div>
+    </p>
+    <p class="caption"><i>v0 (06/01/2021)</i></p>
+  </div>
 
-    <div class="card">
-        <h2>Video</h2>
-        <p>
-            Downloads:&emsp;
-            <a target='_blank' href="https://drive.google.com/file/d/1nPLhzUh7byjDlKOBKvaaeCGGGKlND3OL/view?usp=sharing">1080p (212 MB)</a>&ensp; / &ensp;
-            <a target='_blank' href="https://drive.google.com/file/d/1FmhKl-BaJQHAlQiw8HO_KGo_OMuaCOqf/view?usp=sharing">720p (154 MB)</a>
-        </p>
-        <p>
-            <div style="position:relative;padding-top:60%;">
-                <iframe src="https://www.youtube.com/embed/UUVSPJlwhPg" allowfullscreen style="position:absolute;top:0;left:0"></iframe>
-            </div>
-        </p>
-        <p class="caption"><i>v0 (06/01/2021)</i></p>
+  <div class="card">
+    <h2>Talk</h2>
+    <p>
+    <div style="position:relative;padding-top:60%;">
+      <iframe src="https://www.youtube.com/embed/vt_zQTxqmlk" allowfullscreen style="position:absolute;top:0;left:0"></iframe>
     </div>
+    </p>
+    <p class="caption"><i>v1 (12/22/2021)</i></p>
+  </div>
 
-    <div class="card">
-        <h2>Talk</h2>
-        <p>
-            <div style="position:relative;padding-top:60%;">
-                <iframe src="https://www.youtube.com/embed/vt_zQTxqmlk" allowfullscreen style="position:absolute;top:0;left:0"></iframe>
-            </div>
-        </p>
-        <p class="caption"><i>v1 (12/22/2021)</i></p>
-    </div>
+  <div class="card">
+    <h2>Code</h2>
+    <p>
+    <a target='_blank' href="https://github.com/google/nerfactor">This GitHub repository</a> includes code for:
+    <ul>
+      <li>Data rendering and processing (so that you can render your own scenes or process your own captures);
+        <li>Model training and validation (so that you can modify the model and train it on your own data); and</li>
+        <li>Model inference/testing (so that you can quickly try out our trained models).</li>
+    </ul>
+    </p>
+  </div>
 
-    <div class="card">
-        <h2>Code</h2>
-        <p>
-            <a target='_blank' href="https://github.com/google/nerfactor">This GitHub repository</a> includes code for:
-            <ul>
-                <li>Data rendering and processing (so that you can render your own scenes or process your own captures);
-                <li>Model training and validation (so that you can modify the model and train it on your own data); and</li>
-                <li>Model inference/testing (so that you can quickly try out our trained models).</li>
-            </ul>
-        </p>
-    </div>
+  <div class="card">
+    <h2>Downloads</h2>
+    <p>
+    All subsequent folders and files are specified w.r.t.
+    <a target='_blank' href="https://drive.google.com/drive/folders/1-9HhqWwJhTBjUZqttLafKo72fNl4sB5E">this Google Drive root</a>.
+    </p>
 
-    <div class="card">
-        <h2>Downloads</h2>
-        <p>
-            All subsequent folders and files are specified w.r.t.
-            <a target='_blank' href="https://drive.google.com/drive/folders/1-9HhqWwJhTBjUZqttLafKo72fNl4sB5E">this Google Drive root</a>.
-        </p>
+    <p>
+    If you want to try our trained models, see "Pre-Trained Models."
+    If you want to use our rendered/processed data, see "Data."
+    If you want to render your own data, also see "Metadata."
+    </p>
 
-        <p>
-            If you want to try our trained models, see "Pre-Trained Models."
-            If you want to use our rendered/processed data, see "Data."
-            If you want to render your own data, also see "Metadata."
-        </p>
+    <h3>Pre-Trained Models <mark>(new as of 04/10/2022)</mark></h3>
+    <p>
+    We release the four pre-trained models (<code>hotdog</code>, <code>ficus</code>, <code>lego</code>, and <code>drums</code>) that we used to generate Table 1 of the paper.
+    See <code>./pretrained_models.zip</code>.
+    </p>
 
-        <h3>Pre-Trained Models <mark>(new as of 04/10/2022)</mark></h3>
-        <p>
-        We release the four pre-trained models (<code>hotdog</code>, <code>ficus</code>, <code>lego</code>, and <code>drums</code>) that we used to generate Table 1 of the paper.
-        See <code>./pretrained_models.zip</code>.
-        </p>
+    <h3>Data</h3>
+    <p>
+    We release the images rendered from the synthetic scenes above and
+    the real images (<code>vasedeck</code> and <code>pinecone</code> from NeRF)
+    processed to be compatible with our model's data format:
+    <table>
+      <tbody>
+        <tr>
+          <td>Rendered Images</td>
+          <td>Real Images</td>
+        </tr>
+        <tr>
+          <td><code>./rendered-images/</code></td>
+          <td><code>./real-images/</code></td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
 
-        <h3>Data</h3>
-        <p>
-            We release the images rendered from the synthetic scenes above and
-            the real images (<code>vasedeck</code> and <code>pinecone</code> from NeRF)
-            processed to be compatible with our model's data format:
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Rendered Images</td>
-                        <td>Real Images</td>
-                    </tr>
-                    <tr>
-                        <td><code>./rendered-images/</code></td>
-                        <td><code>./real-images/</code></td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
+    <h3>Metadata</h3>
+    <p>
+    We release
+    the four .blend scenes (modified from what NeRF released): <code>lego</code>, <code>hotdog</code>, <code>ficus</code>, and <code>drums</code>,
+    the training/testing light probes used in the paper, and
+    the training/validation/testing cameras (exactly the same as what NeRF released):
+    <table>
+      <tbody>
+        <tr>
+          <td>Scenes</td>
+          <td>Light Probes</td>
+          <td>Cameras</td>
+        </tr>
+        <tr>
+          <td><code>./blender-scenes.zip</code></td>
+          <td><code>./light-probes.zip</code></td>
+          <td><code>./cameras.zip</code></td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
+  </div>
 
-        <h3>Metadata</h3>
-        <p>
-            We release
-            the four .blend scenes (modified from what NeRF released): <code>lego</code>, <code>hotdog</code>, <code>ficus</code>, and <code>drums</code>,
-            the training/testing light probes used in the paper, and
-            the training/validation/testing cameras (exactly the same as what NeRF released):
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Scenes</td>
-                        <td>Light Probes</td>
-                        <td>Cameras</td>
-                    </tr>
-                    <tr>
-                        <td><code>./blender-scenes.zip</code></td>
-                        <td><code>./light-probes.zip</code></td>
-                        <td><code>./cameras.zip</code></td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
-    </div>
+  <div class="card">
+    <h2>All Video Results</h2>
+    <p>
+    We release the video results of NeRFactor, its material editing,
+    the NeRFactor variants used in our ablation studies, and Oxholm & Nishino [2014].
+    </p>
 
-    <div class="card">
-        <h2>All Video Results</h2>
-        <p>
-            We release the video results of NeRFactor, its material editing,
-            the NeRFactor variants used in our ablation studies, and Oxholm & Nishino [2014].
-        </p>
+    <h3>NeRFactor</h3>
+    <p>
+    Here are our results on all four synthetic scenes and two real captures:
+    <table>
+      <tbody>
+        <tr>
+          <td><code>lego_3072</code></td>
+          <td><code>hotdog_2163</code></td>
+          <td><code>drums_3072</code></td>
+        </tr>
+        <tr class="padbottom">
+          <td><iframe src="https://www.youtube.com/embed/RMUTfDnlMuE" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/YOdhyHl0uec" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/mMqS9Ek1NUI" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+          <td><code>ficus_2188</code></td>
+          <td><code>vasedeck</code></td>
+          <td><code>pinecone</code></td>
+        </tr>
+        <tr>
+          <td><iframe src="https://www.youtube.com/embed/8xnwowUQy7M" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/dIjKj_GOcoU" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/615faNRV-_Y" allowfullscreen></iframe></td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
 
-        <h3>NeRFactor</h3>
-        <p>
-            Here are our results on all four synthetic scenes and two real captures:
-            <table>
-                <tbody>
-                    <tr>
-                        <td><code>lego_3072</code></td>
-                        <td><code>hotdog_2163</code></td>
-                        <td><code>drums_3072</code></td>
-                    </tr>
-                    <tr class="padbottom">
-                        <td><iframe src="https://www.youtube.com/embed/RMUTfDnlMuE" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/YOdhyHl0uec" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/mMqS9Ek1NUI" allowfullscreen></iframe></td>
-                    </tr>
-                    <tr>
-                        <td><code>ficus_2188</code></td>
-                        <td><code>vasedeck</code></td>
-                        <td><code>pinecone</code></td>
-                    </tr>
-                    <tr>
-                        <td><iframe src="https://www.youtube.com/embed/8xnwowUQy7M" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/dIjKj_GOcoU" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/615faNRV-_Y" allowfullscreen></iframe></td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
+    <h3>Material Editing via NeRFactor</h3>
+    <p>
+    Here are our material editing results on all four synthetic scenes and two real captures:
+    <table>
+      <tbody>
+        <tr>
+          <td><code>lego_3072</code></td>
+          <td><code>hotdog_2163</code></td>
+          <td><code>drums_3072</code></td>
+        </tr>
+        <tr class="padbottom">
+          <td><iframe src="https://www.youtube.com/embed/F4wVn8rR9Ac" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/tMaUAz_tznY" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/yZ8yUHsZmsY" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+          <td><code>ficus_2188</code></td>
+          <td><code>vasedeck</code></td>
+          <td><code>pinecone</code></td>
+        </tr>
+        <tr>
+          <td><iframe src="https://www.youtube.com/embed/JemF9E1fkd4" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/thhQmVb7N98" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/EAkalvpmU5s" allowfullscreen></iframe></td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
 
-        <h3>Material Editing via NeRFactor</h3>
-        <p>
-            Here are our material editing results on all four synthetic scenes and two real captures:
-            <table>
-                <tbody>
-                    <tr>
-                        <td><code>lego_3072</code></td>
-                        <td><code>hotdog_2163</code></td>
-                        <td><code>drums_3072</code></td>
-                    </tr>
-                    <tr class="padbottom">
-                        <td><iframe src="https://www.youtube.com/embed/F4wVn8rR9Ac" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/tMaUAz_tznY" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/yZ8yUHsZmsY" allowfullscreen></iframe></td>
-                    </tr>
-                    <tr>
-                        <td><code>ficus_2188</code></td>
-                        <td><code>vasedeck</code></td>
-                        <td><code>pinecone</code></td>
-                    </tr>
-                    <tr>
-                        <td><iframe src="https://www.youtube.com/embed/JemF9E1fkd4" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/thhQmVb7N98" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/EAkalvpmU5s" allowfullscreen></iframe></td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
+    <h3>Ablation Studies</h3>
+    <p>
+    Here are the NeRFactor variants' results on all four synthetic scenes.
+    </p>
+    <h4>Directly Using NeRF's Shape</h4>
+    <p>
+    This model variant fixes the shape to NeRF's, optimizing only the reflectance and illumination:
+    <table>
+      <tbody>
+        <tr>
+          <td><code>lego_3072</code></td>
+          <td><code>hotdog_2163</code></td>
+          <td><code>drums_3072</code></td>
+          <td><code>ficus_2188</code></td>
+        </tr>
+        <tr>
+          <td><iframe src="https://www.youtube.com/embed/ZvrCRHXS1Fw" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/6uqydXRGnSI" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/8QJFyiQgsvA" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/gwW1F_TJ1W0" allowfullscreen></iframe></td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
+    <h4>No Smoothness Regularization</h4>
+    <p>
+    This model variant uses no smoothness regularization:
+    <table>
+      <tbody>
+        <tr>
+          <td><code>lego_3072</code></td>
+          <td><code>hotdog_2163</code></td>
+          <td><code>drums_3072</code></td>
+          <td><code>ficus_2188</code></td>
+        </tr>
+        <tr>
+          <td><iframe src="https://www.youtube.com/embed/yzaAjazEABQ" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/QIRT_J3Vq88" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/2ID4Sph1-PY" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/7dZ8vKB1Xxc" allowfullscreen></iframe></td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
+    <h4>Using Microfacet BRDFs</h4>
+    <p>
+    This model variant uses microfacet BRDFs instead of the learned BRDFs:
+    <table>
+      <tbody>
+        <tr>
+          <td><code>lego_3072</code></td>
+          <td><code>hotdog_2163</code></td>
+          <td><code>drums_3072</code></td>
+          <td><code>ficus_2188</code></td>
+        </tr>
+        <tr>
+          <td><iframe src="https://www.youtube.com/embed/W-DXgCXYGt4" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/3ftZ77IRFnA" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/QbTWVV8b38M" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/AoK07Yf2jFY" allowfullscreen></iframe></td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
+    <h4>No Geometry Pretraining</h4>
+    <p>
+    This model variant trains the surface normal and light visibility MLPs from scratch,
+    together with the reflectance and lighting:
+    <table>
+      <tbody>
+        <tr>
+          <td><code>lego_3072</code></td>
+          <td><code>hotdog_2163</code></td>
+          <td><code>drums_3072</code></td>
+          <td><code>ficus_2188</code></td>
+        </tr>
+        <tr>
+          <td><iframe src="https://www.youtube.com/embed/TG2nWMoPBug" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/AURZ6cyhgBI" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/0qYOTtTnrpA" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/Orv6Wyf1eL8" allowfullscreen></iframe></td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
 
-        <h3>Ablation Studies</h3>
-        <p>
-            Here are the NeRFactor variants' results on all four synthetic scenes.
-        </p>
-        <h4>Directly Using NeRF's Shape</h4>
-        <p>
-            This model variant fixes the shape to NeRF's, optimizing only the reflectance and illumination:
-            <table>
-                <tbody>
-                    <tr>
-                        <td><code>lego_3072</code></td>
-                        <td><code>hotdog_2163</code></td>
-                        <td><code>drums_3072</code></td>
-                        <td><code>ficus_2188</code></td>
-                    </tr>
-                    <tr>
-                        <td><iframe src="https://www.youtube.com/embed/ZvrCRHXS1Fw" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/6uqydXRGnSI" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/8QJFyiQgsvA" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/gwW1F_TJ1W0" allowfullscreen></iframe></td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
-        <h4>No Smoothness Regularization</h4>
-        <p>
-            This model variant uses no smoothness regularization:
-            <table>
-                <tbody>
-                    <tr>
-                        <td><code>lego_3072</code></td>
-                        <td><code>hotdog_2163</code></td>
-                        <td><code>drums_3072</code></td>
-                        <td><code>ficus_2188</code></td>
-                    </tr>
-                    <tr>
-                        <td><iframe src="https://www.youtube.com/embed/yzaAjazEABQ" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/QIRT_J3Vq88" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/2ID4Sph1-PY" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/7dZ8vKB1Xxc" allowfullscreen></iframe></td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
-        <h4>Using Microfacet BRDFs</h4>
-        <p>
-            This model variant uses microfacet BRDFs instead of the learned BRDFs:
-            <table>
-                <tbody>
-                    <tr>
-                        <td><code>lego_3072</code></td>
-                        <td><code>hotdog_2163</code></td>
-                        <td><code>drums_3072</code></td>
-                        <td><code>ficus_2188</code></td>
-                    </tr>
-                    <tr>
-                        <td><iframe src="https://www.youtube.com/embed/W-DXgCXYGt4" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/3ftZ77IRFnA" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/QbTWVV8b38M" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/AoK07Yf2jFY" allowfullscreen></iframe></td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
-        <h4>No Geometry Pretraining</h4>
-        <p>
-            This model variant trains the surface normal and light visibility MLPs from scratch,
-            together with the reflectance and lighting:
-            <table>
-                <tbody>
-                    <tr>
-                        <td><code>lego_3072</code></td>
-                        <td><code>hotdog_2163</code></td>
-                        <td><code>drums_3072</code></td>
-                        <td><code>ficus_2188</code></td>
-                    </tr>
-                    <tr>
-                        <td><iframe src="https://www.youtube.com/embed/TG2nWMoPBug" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/AURZ6cyhgBI" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/0qYOTtTnrpA" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/Orv6Wyf1eL8" allowfullscreen></iframe></td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
+    <h3>Oxholm & Nishino [2014]</h3>
+    <p>
+    Here is how NeRFactor compares with an enhanced version of Oxholm & Nishino [2014]
+    (implemented by ourselves due to the lack of the source code) on all four synthetic scenes:
+    <table>
+      <tbody>
+        <tr>
+          <td><code>lego_3072</code></td>
+          <td><code>hotdog_2163</code></td>
+          <td><code>drums_3072</code></td>
+          <td><code>ficus_2188</code></td>
+        </tr>
+        <tr>
+          <td><iframe src="https://www.youtube.com/embed/HvHWxRzniY0" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/mOblj68xHic" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/z1m5cAYi0zM" allowfullscreen></iframe></td>
+          <td><iframe src="https://www.youtube.com/embed/EaVaHPqnzCo" allowfullscreen></iframe></td>
+        </tr>
+      </tbody>
+    </table>
+    †Both this enhanced version and the original model require ground-truth lighting, which we provided.
+    </p>
+  </div>
 
-        <h3>Oxholm & Nishino [2014]</h3>
-        <p>
-            Here is how NeRFactor compares with an enhanced version of Oxholm & Nishino [2014]
-            (implemented by ourselves due to the lack of the source code) on all four synthetic scenes:
-            <table>
-                <tbody>
-                    <tr>
-                        <td><code>lego_3072</code></td>
-                        <td><code>hotdog_2163</code></td>
-                        <td><code>drums_3072</code></td>
-                        <td><code>ficus_2188</code></td>
-                    </tr>
-                    <tr>
-                        <td><iframe src="https://www.youtube.com/embed/HvHWxRzniY0" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/mOblj68xHic" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/z1m5cAYi0zM" allowfullscreen></iframe></td>
-                        <td><iframe src="https://www.youtube.com/embed/EaVaHPqnzCo" allowfullscreen></iframe></td>
-                    </tr>
-                </tbody>
-            </table>
-            †Both this enhanced version and the original model require ground-truth lighting, which we provided.
-        </p>
-    </div>
-
-    <div class="copyright_card">
-        <p>
-            Copyright &copy; 2021 Paper Authors. All Rights Reserved.
-        </p>
-    </div>
+  <div class="copyright_card">
+    <p>
+    Copyright &copy; 2021 Paper Authors. All Rights Reserved.
+    </p>
+  </div>
 </body>
 </html>
