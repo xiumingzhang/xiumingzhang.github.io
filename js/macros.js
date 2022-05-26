@@ -183,6 +183,12 @@ function getConst(id) {
         case "sabuncu":
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://sabuncu.engineering.cornell.edu/\">Mert R. Sabuncu</a>");
             break;
+        case "yifan":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://homes.cs.washington.edu/~yifan1/\">Yifan Wang</a>");
+            break;
+        case "holynski":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://homes.cs.washington.edu/~holynski/\">Aleksander Holynski</a>");
+            break;
         case "pnas":
             document.write("<a class=\"lowkey\" target='_blank' href=\"https://en.wikipedia.org/wiki/Proceedings_of_the_National_Academy_of_Sciences_of_the_United_States_of_America\">PNAS</a>");
             break;
