@@ -85,7 +85,7 @@ function getConst(id) {
             document.write("<a target='_blank' href=\"https://news.mit.edu/2018/creating-3-d-printed-motion-sculptures-from-2-d-videos-mit-csail-0919\">MIT</a>");
             break;
         case "mosculp_homepage":
-            document.write("<a target='_blank' href=\"assets/mosculp/mit_homepage.png\">the 9/19 MIT homepage</a>");
+            document.write("<a target='_blank' href=\"assets/mosculp/mit_homepage.png\">the 9/19 MIT Homepage</a>");
             break;
         case "ad_pt":
             document.write("<a target='_blank' href=\"https://www.psychologytoday.com/intl/blog/the-athletes-way/201610/alzheimers-study-links-triad-brain-areas-cognition\">Psychology Today</a>");
