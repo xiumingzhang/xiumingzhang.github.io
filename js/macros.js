@@ -12,6 +12,9 @@ function getConst(id) {
         case "freeman":
             document.write("<a class=\"lowkey\" target='_blank' href=\"http://billf.mit.edu/\">William T. Freeman</a>");
             break;
+        case "torralba":
+            document.write("<a class=\"lowkey\" target='_blank' href=\"https://groups.csail.mit.edu/vision/torralbalab/\">Antonio Torralba</a>");
+            break;
         case "adobe":
             document.write("<a target='_blank' href=\"https://www.adobe.com/\">Adobe</a>");
             break;
