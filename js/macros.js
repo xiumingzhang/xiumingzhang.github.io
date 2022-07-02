@@ -215,19 +215,6 @@ function getConst(id) {
     }
 }
 
-function getSep(size) {
-    switch(size) {
-        case "big":
-            document.write("&emsp;|&emsp;");
-            break;
-        case "small":
-            document.write("&ensp;|&ensp;");
-            break;
-        default:
-            document.write("UNDEFINED");
-    }
-}
-
 function sup(text, link) {
     var fontsize = "";
     return `<sup><font size="${fontsize}"><a target='_blank' href="${link}">[${text}]</a></font></sup>`;
