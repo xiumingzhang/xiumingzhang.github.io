@@ -168,9 +168,13 @@
     If you want to render your own data, also see "Metadata."
     </p>
 
-    <h3>Pre-Trained Models <mark>(new as of 04/10/2022)</mark></h3>
+    <h3>Pre-Trained Models <mark>(new as of 07/17/2022)</mark></h3>
     <p>
-    We release the four pre-trained models (<code>hotdog</code>, <code>ficus</code>, <code>lego</code>, and <code>drums</code>) that we used to generate Table 1 of the paper.
+    There are four types of pre-trained models in NeRFactor.
+    The first is the MERL BRDF model, which we release here.
+    The second are the NeRF models that generate the surfaces we start with. We are not releasing these but you can train these NeRF models and then generate the surfaces using our code.
+    The third are the NeRFactor shape pre-training models that learn to just reproduce the NeRF surfaces. We are not releasing these but you can train them easily with our code.
+    The fourth are the final NeRFactor models (<code>hotdog</code>, <code>ficus</code>, <code>lego</code>, and <code>drums</code>), which we release here.
     See <code>./pretrained_models.zip</code>.
     </p>
 
