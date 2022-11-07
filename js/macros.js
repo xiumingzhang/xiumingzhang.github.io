@@ -254,6 +254,9 @@ function getAffli(id) {
     case "csail":
       clickable("Computer Science and Artificial Intelligence Laboratory (CSAIL)", "http://www.csail.mit.edu");
       break;
+    case "csail_short":
+      clickable("CSAIL", "http://www.csail.mit.edu");
+      break;
     case "mit":
       clickable("Massachusetts Institute of Technology (MIT)", "http://www.mit.edu");
       break;
