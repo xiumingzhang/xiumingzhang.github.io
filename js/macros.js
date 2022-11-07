@@ -38,9 +38,12 @@ function undef() {
 }
 
 function getPerson(id) {
-  switch(id) {
+  switch (id) {
     case "me":
       document.write("<u>Xiuming Zhang</u>");
+      break;
+    case "freeman_short":
+      clickable("Bill Freeman", "https://billf.mit.edu/");
       break;
     case "freeman":
       clickable("William T. Freeman", "https://billf.mit.edu/");
@@ -75,11 +78,17 @@ function getPerson(id) {
     case "boyang":
       clickable("Boyang Deng", "https://boyangdeng.com/");
       break;
+    case "barron_short":
+      clickable("Jon Barron", "https://jonbarron.info/");
+      break;
     case "barron":
       clickable("Jonathan T. Barron", "https://jonbarron.info/");
       break;
     case "tianfan":
       clickable("Tianfan Xue", "https://people.csail.mit.edu/tfxue/");
+      break;
+    case "yeo_short":
+      clickable("Thomas Yeo", "https://sites.google.com/view/yeolab/thomas");
       break;
     case "yeo":
       clickable("B. T. Thomas Yeo", "https://sites.google.com/view/yeolab/thomas");
@@ -198,7 +207,7 @@ function getPerson(id) {
 }
 
 function getVenue(id) {
-  switch(id) {
+  switch (id) {
     case "iccv":
       clickable("ICCV", "https://en.wikipedia.org/wiki/International_Conference_on_Computer_Vision");
       break;
@@ -235,7 +244,10 @@ function getVenue(id) {
 }
 
 function getAffli(id) {
-  switch(id) {
+  switch (id) {
+    case "tesla_autopilot":
+      clickable("Tesla Autopilot", "https://www.tesla.com/AI");
+      break;
     case "adobe":
       clickable("Adobe", "https://www.adobe.com/");
       break;
@@ -248,8 +260,8 @@ function getAffli(id) {
     case "mit_short":
       clickable("MIT", "http://www.mit.edu");
       break;
-    case "google":
-      clickable("Google", "https://research.google/");
+    case "google_research":
+      clickable("Google Research", "https://ai.google/");
       break;
     case "nus":
       clickable("National University of Singapore", "https://www.nus.edu.sg/");
@@ -266,7 +278,7 @@ function getAffli(id) {
 }
 
 function getNews(id) {
-  switch(id) {
+  switch (id) {
     case "mosculp_bbc":
       clickme("BBC", MOSCULP_BBC);
       break;
