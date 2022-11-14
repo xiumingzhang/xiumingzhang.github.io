@@ -245,8 +245,11 @@ function getVenue(id) {
 
 function getAffli(id) {
   switch (id) {
-    case "tesla_autopilot":
-      clickable("Tesla Autopilot", "https://www.tesla.com/AI");
+    case "tesla":
+      clickable("Tesla", "https://www.tesla.com");
+      break;
+    case "tesla_ap":
+      clickable("Tesla Autopilot", "https://www.tesla.com/autopilot");
       break;
     case "adobe":
       clickable("Adobe", "https://www.adobe.com/");
@@ -255,7 +258,7 @@ function getAffli(id) {
       clickable("Computer Science and Artificial Intelligence Laboratory (CSAIL)", "http://www.csail.mit.edu");
       break;
     case "csail_short":
-      clickable("CSAIL", "http://www.csail.mit.edu");
+      clickable("MIT CSAIL", "http://www.csail.mit.edu");
       break;
     case "mit":
       clickable("Massachusetts Institute of Technology (MIT)", "http://www.mit.edu");
