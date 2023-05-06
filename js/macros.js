@@ -1,3 +1,5 @@
+const DIFFUSIONRIG_PROJECT = "https://diffusionrig.github.io/";
+
 const DISSERTATION_PDF = "https://drive.google.com/file/d/1-cUlfdSXbekzRZB4FO3OEmdSi3i-MoaT/view";
 
 const NLT_PROJECT = "http://nlt.csail.mit.edu/";
@@ -106,7 +108,16 @@ function getPerson(id) {
       clickable("Jiajun Wu", "https://jiajunwu.com/");
       break;
     case "xuaner":
-      clickable("Xuaner (Cecilia) Zhang", "https://people.eecs.berkeley.edu/~cecilia77/");
+      clickable("Xuaner Zhang", "https://ceciliavision.github.io/");
+      break;
+    case "zhihao":
+      clickable("Zhihao Xia", "https://likesum.github.io/");
+      break;
+    case "jebe":
+      clickable("Lars Jebe", "https://lcjebe.github.io/");
+      break;
+    case "zhuowen":
+      clickable("Zhuowen Tu", "https://pages.ucsd.edu/~ztu/");
       break;
     case "jacobs":
       clickable("David E. Jacobs", "http://graphics.stanford.edu/~dejacobs/");

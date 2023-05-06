@@ -115,11 +115,11 @@
 
           </p>
           <h4>Past Experiences</h4>
-          <table class="invisible">
+          <table class="invisible" style="line-height: 1">
             <tbody class="invisible">
               <tr class="invisible">
                 <td>
-                  <i class="fa fa-building-o fa-fw"></i>&ensp;Research
+                  <i class="fa fa-building-o fa-fw"></i>&ensp;Computer
                   Scientist,
                   <b><script>getAffli("adobe")</script> Emerging Products Group</b>,
                   2021&ndash;2022
@@ -198,6 +198,11 @@
           <div style="height:270px;overflow:auto;">
             <table>
               <tbody>
+                <tr>
+                  <td style="width:15%">Apr. 2023</td>
+                  <td><script>clickme("DiffusionRig", DIFFUSIONRIG_PROJECT);</script>
+                    (personalized face editing) released for CVPR 2023.</td>
+                </tr>
                 <tr>
                   <td style="width:15%">Oct. 2022</td>
                   <td>Joined <script>getAffli("tesla_ap");</script> to work on 3D perception.</td>
@@ -297,6 +302,30 @@
 
               <article>
                 <div class="image">
+                  <img src="images/pub/diffusionrig.gif" />
+                </div>
+                <div class="inner">
+                  <script>paper("https://arxiv.org/pdf/2304.06711.pdf");</script>
+                  <script>video("https://www.youtube.com/watch?v=6ZQbiNiJJEE");</script>
+                  <script>project("https://diffusionrig.github.io/");</script>
+                  <script>code("https://github.com/adobe-research/diffusion-rig");</script>
+                  <script>bibtex("docs/bib/diffusionrig.bib");</script>
+                  <br>
+                  <b>DiffusionRig: Learning Personalized Priors for Facial Appearance Editing</b>
+                  <br>
+                  Zheng Ding,
+                  <script>getPerson("xuaner");</script>,
+                  <script>getPerson("zhihao");</script>,
+                  <script>getPerson("jebe");</script>,
+                  <script>getPerson("zhuowen");</script>,
+                  <script>getPerson("me");</script>
+                  <br>
+                  <b><script>getVenue("cvpr");</script> 2023</b>
+                </div>
+              </article>
+
+              <article>
+                <div class="image">
                   <img src="images/pub/sunstage.gif" />
                 </div>
                 <div class="inner">
@@ -313,7 +342,7 @@
                   <script>getPerson("me");</script>,
                   <script>getPerson("xuaner");</script>
                   <br>
-                  <b>arXiv 2022</b>
+                  <b><script>getVenue("cvpr");</script> 2023</b>
                 </div>
               </article>
 
@@ -1024,6 +1053,8 @@
           </header>
           <h4>Conference Reviewer</h4>
           <p>
+            <script>clickable("EG 2023", "https://eg2023.saarland-informatics-campus.de/");</script>,
+            <script>clickable("CVPR 2023", "https://cvpr2023.thecvf.com/");</script>,
             <script>clickable("SIGGRAPH Asia 2022", "https://sa2022.siggraph.org/en/");</script>,
             <script>clickable("NeurIPS 2022", "https://nips.cc/Conferences/2022");</script>,
             <script>clickable("ICML 2022", "https://icml.cc/Conferences/2022");</script>,
