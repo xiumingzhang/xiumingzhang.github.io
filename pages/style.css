@@ -11,7 +11,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 /* Basic */
 
 body {
-    background: #8A8B8C;
+    background: #A31F34;
 }
 
 body,
@@ -66,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #A31F34;
+    color: #333;
     font-weight: 700;
     line-height: 1em;
     margin: 0 0 0.5625em 0;
@@ -501,7 +501,8 @@ input[type="submit"].icon,
 input[type="reset"].icon,
 input[type="button"].icon,
 .button.icon {
-    padding-left: 1.35em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 input[type="submit"].icon:before,
@@ -569,8 +570,8 @@ input[type="submit"].special,
 input[type="reset"].special,
 input[type="button"].special,
 .button.special {
-    background-color: #A31F34;
-    color: #ffffff !important;
+    background-color: #FFF;
+    color: #333 !important;
 }
 
 input[type="submit"].special:hover,
@@ -639,7 +640,7 @@ input[type="button"]:disabled,
 
 /* Text Box */
 
-div.transbox {
+.transbox {
     border-radius: 10px;
     margin: 1.5em auto;
     padding: 1.5em 4em 0.5em 4em;
@@ -649,4 +650,8 @@ div.transbox {
     opacity: 1;
     filter: alpha(opacity=100);
     /* For IE8 and earlier */
+}
+
+.invisible {
+    background-color: #A31F34;
 }
