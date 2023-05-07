@@ -6,7 +6,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 /* Basic */
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
     font-size: 13pt;
 }
 
@@ -16,11 +19,11 @@ body, input, select, textarea {
     width: 21em;
 }
 
-#header > header {
+#header>header {
     padding: 2em;
 }
 
-#header > footer {
+#header>footer {
     padding: 1.5em;
 }
 
@@ -32,6 +35,6 @@ body, input, select, textarea {
 
 /* Main */
 
-#main > section > .container {
+#main>section>.container {
     padding: 4em 0 2em 0;
 }

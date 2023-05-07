@@ -11,11 +11,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 /* Basic */
 
-html, body {
+html,
+body {
     min-width: 320px;
 }
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
     font-size: 12pt;
 }
 
@@ -36,12 +40,12 @@ ul.actions li:first-child {
     padding-top: 0;
 }
 
-ul.actions li > * {
+ul.actions li>* {
     width: 100%;
     margin: 0 !important;
 }
 
-ul.actions li > *.icon:before {
+ul.actions li>*.icon:before {
     margin-left: -2em;
 }
 

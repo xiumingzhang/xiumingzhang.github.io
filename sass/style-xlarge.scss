@@ -11,41 +11,45 @@ $size-header: 21em;
 
 /* Basic */
 
-	body, input, select, textarea {
-		font-size: 13pt;
-	}
-	
+body,
+input,
+select,
+textarea {
+	font-size: 13pt;
+}
+
 /* Header */
 
-	#header {
-		width: $size-header;
+#header {
+	width: $size-header;
 
-		> header {
-			padding: 2em;
-		}
-
-		> footer {
-			padding: 1.5em;
-		}
+	>header {
+		padding: 2em;
 	}
-	
+
+	>footer {
+		padding: 1.5em;
+	}
+}
+
 /* Wrapper */
 
-	#wrapper {
-		@if $side-header == 'right' {
-			padding-right: $size-header;
-		}
-		@else {
-			padding-left: $size-header;
-		}
+#wrapper {
+	@if $side-header =='right' {
+		padding-right: $size-header;
 	}
-	
+
+	@else {
+		padding-left: $size-header;
+	}
+}
+
 /* Main */
 
-	#main {		
-		> section {
-			> .container {
-				padding: 4em 0 2em 0;
-			}
+#main {
+	>section {
+		>.container {
+			padding: 4em 0 2em 0;
 		}
 	}
+}

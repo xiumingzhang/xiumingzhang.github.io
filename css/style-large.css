@@ -6,7 +6,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 /* Basic */
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
     font-size: 11pt;
 }
 

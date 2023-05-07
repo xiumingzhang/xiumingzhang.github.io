@@ -6,17 +6,22 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 /* Basic */
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
     font-size: 12pt;
 }
 
 /* Image */
 
-.image.left, .image.right {
+.image.left,
+.image.right {
     max-width: 40%;
 }
 
-.image.left img, .image.right img {
+.image.left img,
+.image.right img {
     width: 100%;
 }
 
@@ -36,7 +41,7 @@ body, input, select, textarea {
     width: 100%;
 }
 
-#header > footer {
+#header>footer {
     bottom: auto;
     left: auto;
     margin: 1em 0 0 0;

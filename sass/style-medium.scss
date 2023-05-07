@@ -9,124 +9,131 @@
 
 /* Basic */
 
-	body, input, select, textarea {
-		font-size: 12pt;
-	}
+body,
+input,
+select,
+textarea {
+	font-size: 12pt;
+}
 
 /* Image */
 
-	.image {
-		&.left,
-		&.right {
-			max-width: 40%;
+.image {
 
-			img {
-				width: 100%;
-			}
+	&.left,
+	&.right {
+		max-width: 40%;
+
+		img {
+			width: 100%;
 		}
 	}
+}
 
 /* Header */
 
-	#skel-layers-wrapper {
-		padding-top: 44px;
-	}
+#skel-layers-wrapper {
+	padding-top: 44px;
+}
 
-	#header {
-		background: none;
+#header {
+	background: none;
+	bottom: auto;
+	left: auto;
+	position: relative;
+	right: auto;
+	top: auto;
+	width: 100%;
+
+	>footer {
 		bottom: auto;
 		left: auto;
+		margin: 1em 0 0 0;
 		position: relative;
 		right: auto;
 		top: auto;
-		width: 100%;
-
-		> footer {
-			bottom: auto;
-			left: auto;
-			margin: 1em 0 0 0;
-			position: relative;
-			right: auto;
-			top: auto;
-		}
 	}
+}
 
 /* Wrapper */
 
-	#wrapper {
-		padding: 0;
-	}
+#wrapper {
+	padding: 0;
+}
 
 /* One */
 
-	#one {
-		&:before {
-			height: 10em;
-		}
+#one {
+	&:before {
+		height: 10em;
 	}
+}
 
 /* Layers */
 
-	#titleBar {
-		background: #222;
+#titleBar {
+	background: #222;
+	color: #fff;
+	min-width: 320px;
+
+	.title {
 		color: #fff;
-		min-width: 320px;
+		display: block;
+		font-weight: $font-weight-bold;
+		height: 44px;
+		line-height: 44px;
+		padding: 0 1em;
+		width: 100%;
 
-		.title {
-			color: #fff;
-			display: block;
-			font-weight: $font-weight-bold;
-			height: 44px;
-			line-height: 44px;
-			padding: 0 1em;
-			width: 100%;
-
-			@if $side-header == 'right' {
-				text-align: left;
-			}
-			@else {
-				text-align: right;
-			}
+		@if $side-header =='right' {
+			text-align: left;
 		}
 
-		.toggle {
-			@include icon;
-			height: 4em;
-			position: absolute;
-			top: 0;
-			width: 6em;
+		@else {
+			text-align: right;
+		}
+	}
 
-			@if $side-header == 'right' {
+	.toggle {
+		@include icon;
+		height: 4em;
+		position: absolute;
+		top: 0;
+		width: 6em;
+
+		@if $side-header =='right' {
+			right: 0;
+		}
+
+		@else {
+			left: 0;
+		}
+
+		&:before {
+			background: $color-accent-bg;
+			color: $color-accent-fg-bold;
+			content: '\f0c9';
+			display: block;
+			font-size: 18px;
+			height: 44px;
+			line-height: 44px;
+			position: absolute;
+			text-align: center;
+			top: 0;
+			width: 64px;
+
+			@if $side-header =='right' {
 				right: 0;
 			}
+
 			@else {
 				left: 0;
 			}
-
-			&:before {
-				background: $color-accent-bg;
-				color: $color-accent-fg-bold;
-				content: '\f0c9';
-				display: block;
-				font-size: 18px;
-				height: 44px;
-				line-height: 44px;
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: 64px;
-
-				@if $side-header == 'right' {
-					right: 0;
-				}
-				@else {
-					left: 0;
-				}
-			}
 		}
 	}
+}
 
-	#sidePanel {
-		background: $color-header-bg;
-		color: $color-header-fg;
-	}
+#sidePanel {
+	background: $color-header-bg;
+	color: $color-header-fg;
+}
