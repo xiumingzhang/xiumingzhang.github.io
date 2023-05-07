@@ -9,14 +9,14 @@ const MOSCULP_PHOTOS = "https://photos.app.goo.gl/HkTbsYtXQXxBo8up6";
 const MOSCULP_FORBES = "https://www.forbes.com/sites/jenniferhicks/2018/09/25/these-researchers-turned-2d-videos-into-3d-motion-sculptures";
 const MOSCULP_BBC = "https://www.bbc.com/news/av/technology-45552015/creating-3d-sculptures-from-2d-video-and-other-news";
 const MOSCULP_MIT = "https://news.mit.edu/2018/creating-3-d-printed-motion-sculptures-from-2-d-videos-mit-csail-0919";
-const MOSCULP_MIT_HOMEPAGE = "assets/mosculp/mit_homepage.png";
+const MOSCULP_MIT_HOMEPAGE = "docs/news/mosculp_mit_homepage.png";
 
 const GENRE_PROJECT = "http://genre.csail.mit.edu/";
 
 const AD_PAPER = "http://dx.doi.org/10.1073/pnas.1611073113";
 const AD_NUS = "http://news.nus.edu.sg/highlights/model-illuminates-alzheimers-disease";
 const AD_PT = "https://www.psychologytoday.com/intl/blog/the-athletes-way/201610/alzheimers-study-links-triad-brain-areas-cognition";
-const AD_MGH = "assets/ad_factors/mgh.pdf";
+const AD_MGH = "docs/news/ad_mgh.pdf";
 
 const MIT_RED = "#A31F34";
 const MIT_DARK_GRAY = "#8A8B8C";
