@@ -645,6 +645,7 @@ input[type="button"]:disabled,
     margin: 1.5em auto;
     padding: 1.5em 4em 0.5em 4em;
     width: 60%;
+    max-width: 640px;
     position: relative;
     background-color: #ffffff;
     opacity: 1;
