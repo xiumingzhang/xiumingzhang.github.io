@@ -643,7 +643,7 @@ input[type="button"]:disabled,
 .transbox {
     border-radius: 10px;
     margin: 1.5em auto;
-    padding: 1.5em 4em 0.5em 4em;
+    padding: 2em 2em 0.5em 2em;
     width: 60%;
     max-width: 640px;
     position: relative;
