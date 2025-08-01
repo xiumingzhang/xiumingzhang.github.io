@@ -10,51 +10,51 @@
 /* Basic */
 
 code,
-input[type="text"],
-input[type="password"],
-input[type="email"],
+input[type='text'],
+input[type='password'],
+input[type='email'],
 select,
 textarea,
 .box,
 .image,
 .image img,
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
 .button {
-	position: relative;
-	-ms-behavior: url('css/ie/PIE.htc');
+  position: relative;
+  -ms-behavior: url('css/ie/PIE.htc');
 }
 
 /* Form */
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
+input[type='text'],
+input[type='password'],
+input[type='email'],
 select {
-	line-height: $size-element-height;
+  line-height: $size-element-height;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-	@include vendor-property('appearance', 'normal');
+input[type='checkbox'],
+input[type='radio'] {
+  @include vendor-property('appearance', 'normal');
 
-	&+label {
-		padding: 0 0 0 1.5em;
+  & + label {
+    padding: 0 0 0 1.5em;
 
-		&:before {
-			display: none;
-		}
-	}
+    &:before {
+      display: none;
+    }
+  }
 }
 
 /* Button */
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
 .button {
-	&.alt {
-		border: solid $size-border-width $color-border2;
-	}
+  &.alt {
+    border: solid $size-border-width $color-border2;
+  }
 }

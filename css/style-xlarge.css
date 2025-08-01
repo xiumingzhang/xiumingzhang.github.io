@@ -10,31 +10,31 @@ body,
 input,
 select,
 textarea {
-    font-size: 13pt;
+  font-size: 13pt;
 }
 
 /* Header */
 
 #header {
-    width: 21em;
+  width: 21em;
 }
 
-#header>header {
-    padding: 2em;
+#header > header {
+  padding: 2em;
 }
 
-#header>footer {
-    padding: 1.5em;
+#header > footer {
+  padding: 1.5em;
 }
 
 /* Wrapper */
 
 #wrapper {
-    padding-right: 21em;
+  padding-right: 21em;
 }
 
 /* Main */
 
-#main>section>.container {
-    padding: 4em 0 2em 0;
+#main > section > .container {
+  padding: 4em 0 2em 0;
 }

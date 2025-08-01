@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Minified files
+*.min.js
+*.min.css
+
+# Generated files
+css/academicons.css
+css/academicons.min.css
+css/font-awesome.min.css
+
+# Fonts and images
+fonts/
+images/
+docs/
+
+# Git
+.git/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# License and readme (preserve original formatting)
+LICENSE.txt
+README.md
+
+# Specific minified or vendor files
+js/jquery.min.js
+js/jquery.scrolly.min.js
+js/jquery.scrollzer.min.js
+js/skel-layers.min.js
+js/skel.min.js 

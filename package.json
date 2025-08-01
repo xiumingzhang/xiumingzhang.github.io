@@ -1,0 +1,23 @@
+{
+  "name": "xiumingzhang-github-io",
+  "version": "1.0.0",
+  "description": "Personal website of Xiuming Zhang",
+  "main": "index.html",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:html": "prettier --write \"**/*.html\"",
+    "format:css": "prettier --write \"**/*.css\"",
+    "format:scss": "prettier --write \"**/*.scss\"",
+    "format:js": "prettier --write \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiumingzhang/xiumingzhang.github.io.git"
+  },
+  "author": "Xiuming Zhang",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.1.0"
+  }
+}

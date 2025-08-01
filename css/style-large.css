@@ -10,17 +10,17 @@ body,
 input,
 select,
 textarea {
-    font-size: 11pt;
+  font-size: 11pt;
 }
 
 /* Header */
 
 #header {
-    width: 20em;
+  width: 20em;
 }
 
 /* Wrapper */
 
 #wrapper {
-    padding-right: 20em;
+  padding-right: 20em;
 }
