@@ -1185,3 +1185,45 @@ input[type='button']:disabled,
 #footer .copyright li a {
   color: inherit;
 }
+
+/* Prevent ultra-wide layouts by constraining the main content area */
+@media (min-width: 1400px) {
+  #main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Always cap the main content width and center it */
+#main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cap the entire site width and keep the right sidebar inside the cap */
+@media (min-width: 1680px) {
+  body {
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Pull the fixed header in from the viewport edge to align with the centered body */
+  #header {
+    right: calc((100vw - 1680px) / 2);
+  }
+}
+
+/* Keep the whole layout (content + right sidebar) centered at wide widths */
+@media (min-width: 1568px) {
+  /* 1200px content + 23em sidebar ≈ full site width */
+  #wrapper {
+    max-width: calc(1200px + 23em);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #header {
+    right: calc((100vw - (1200px + 23em)) / 2);
+  }
+}
