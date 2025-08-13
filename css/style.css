@@ -1186,6 +1186,24 @@ input[type='button']:disabled,
   color: inherit;
 }
 
+/* Footer logo */
+.footer-logo {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.footer-logo img {
+  display: inline-block;
+  max-width: 64px;
+  height: auto;
+}
+
+/* Tighter footer spacing */
+#footer {
+  padding-top: 1em;
+  padding-bottom: 0em;
+}
+
 /* Prevent ultra-wide layouts by constraining the main content area */
 @media (min-width: 1400px) {
   #main {
