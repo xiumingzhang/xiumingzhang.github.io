@@ -1245,3 +1245,20 @@ input[type='button']:disabled,
     right: calc((100vw - (1200px + 23em)) / 2);
   }
 }
+
+/* Ensure sidebar content doesn't overlap when viewport height is small */
+#header {
+  display: flex;
+  flex-direction: column;
+}
+
+#header > nav {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+#header > footer {
+  position: static;
+  margin-top: auto;
+}
