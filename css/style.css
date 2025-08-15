@@ -1189,7 +1189,7 @@ input[type='button']:disabled,
 /* Footer logo */
 .footer-logo {
   margin-top: 0em;
-  margin-bottom: 0em;
+  margin-bottom: 1em;
 }
 
 .footer-logo img {
