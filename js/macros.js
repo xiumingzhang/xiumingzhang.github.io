@@ -419,6 +419,10 @@ function video(link) {
   text_button('video', link);
 }
 
+function source(link) {
+  text_button('source', link);
+}
+
 function talk(link) {
   text_button('talk', link);
 }
