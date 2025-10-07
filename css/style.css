@@ -495,10 +495,7 @@ input[type='radio'] + label:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   /* Prefer FA6 brands; fall back to FA6 Free and FA4 */
-  font-family:
-    "Font Awesome 6 Brands",
-    "Font Awesome 6 Free",
-    FontAwesome;
+  font-family: 'Font Awesome 6 Brands', 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   font-weight: inherit; /* Let FA6/v4 shims set appropriate weight */
   text-transform: none !important;
