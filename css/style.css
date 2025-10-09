@@ -1144,7 +1144,7 @@ input[type='button']:disabled,
 
 /* One */
 
-#one:before {
+#about:before {
   background-image: url('../images/banners/mosculp.jpg');
   background-position: top left;
   background-repeat: no-repeat;
