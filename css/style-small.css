@@ -108,8 +108,10 @@ header.major h2 + p {
 
 /* One */
 
-#one:before {
+#about:before {
   height: 7em;
+  background-size: cover;
+  background-position: center center;
 }
 
 /* Footer */
