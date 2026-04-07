@@ -1207,15 +1207,6 @@ input[type='button']:disabled,
   padding-bottom: 0em;
 }
 
-/* Prevent ultra-wide layouts by constraining the main content area */
-@media (min-width: 1400px) {
-  #main {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 /* Always cap the main content width and center it */
 #main {
   max-width: 1200px;
@@ -1229,10 +1220,6 @@ input[type='button']:disabled,
     max-width: 1680px;
     margin-left: auto;
     margin-right: auto;
-  }
-  /* Pull the fixed header in from the viewport edge to align with the centered body */
-  #header {
-    right: calc((100vw - 1680px) / 2);
   }
 }
 
