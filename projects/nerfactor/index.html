@@ -1,21 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<html>
+<html lang="en">
   <head>
     <title>NeRFactor</title>
     <link rel="stylesheet" href="./style.css" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="icon" type="image/png" href="assets/logos/csail.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/logos/csail.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Facebook -->
-    <meta property="og:image" content="assets/images/cover.jpg" />
+    <meta property="og:image" content="https://xiuming.info/projects/nerfactor/assets/images/cover.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="512" />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="http://people.csail.mit.edu/xiuming/projects/nerfactor/"
+      content="https://xiuming.info/projects/nerfactor/"
     />
     <meta property="og:title" content="NeRFactor" />
     <meta property="og:description" content="Project page for NeRFactor." />
@@ -23,7 +23,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="NeRFactor" />
     <meta name="twitter:description" content="Project page for NeRFactor." />
-    <meta name="twitter:image" content="assets/images/cover.jpg" />
+    <meta name="twitter:image" content="https://xiuming.info/projects/nerfactor/assets/images/cover.jpg" />
   </head>
 
   <body>
@@ -37,7 +37,7 @@
 
     <div class="author_card">
       <p class="author">
-        <a target="_blank" href="http://people.csail.mit.edu/xiuming/"
+        <a target="_blank" href="https://xiuming.info/"
           >Xiuming Zhang</a
         >&nbsp;<sup>1</sup>&emsp;&emsp;
         <a target="_blank" href="https://pratulsrinivasan.github.io/"
@@ -83,43 +83,47 @@
       <h2>Abstract</h2>
       <table>
         <tr class="padbottom">
-          We address the problem of recovering the shape and spatially-varying
-          reflectance of an object from multi-view images (and their camera
-          poses) of an object illuminated by one unknown lighting condition.
-          This enables the rendering of novel views of the object under
-          arbitrary environment lighting and editing of the object's material
-          properties. The key to our approach, which we call Neural Radiance
-          Factorization (NeRFactor), is to distill the volumetric geometry of a
-          Neural Radiance Field (NeRF) [Mildenhall et al. 2020] representation
-          of the object into a surface representation and then jointly refine
-          the geometry while solving for the spatially-varying reflectance and
-          environment lighting. Specifically, NeRFactor recovers 3D neural
-          fields of surface normals, light visibility, albedo, and Bidirectional
-          Reflectance Distribution Functions (BRDFs) without any supervision,
-          using only a re-rendering loss, simple smoothness priors, and a
-          data-driven BRDF prior learned from real-world BRDF measurements. By
-          explicitly modeling light visibility, NeRFactor is able to separate
-          shadows from albedo and synthesize realistic soft or hard shadows
-          under arbitrary lighting conditions. NeRFactor is able to recover
-          convincing 3D models for free-viewpoint relighting in this challenging
-          and underconstrained capture setup for both synthetic and real scenes.
-          Qualitative and quantitative experiments show that NeRFactor
-          outperforms classic and deep learning-based state of the art across
-          various tasks. Our videos, code, and data are available at
-          people.csail.mit.edu/xiuming/projects/nerfactor/.
+          <td>
+            We address the problem of recovering the shape and spatially-varying
+            reflectance of an object from multi-view images (and their camera
+            poses) of an object illuminated by one unknown lighting condition.
+            This enables the rendering of novel views of the object under
+            arbitrary environment lighting and editing of the object's material
+            properties. The key to our approach, which we call Neural Radiance
+            Factorization (NeRFactor), is to distill the volumetric geometry of a
+            Neural Radiance Field (NeRF) [Mildenhall et al. 2020] representation
+            of the object into a surface representation and then jointly refine
+            the geometry while solving for the spatially-varying reflectance and
+            environment lighting. Specifically, NeRFactor recovers 3D neural
+            fields of surface normals, light visibility, albedo, and Bidirectional
+            Reflectance Distribution Functions (BRDFs) without any supervision,
+            using only a re-rendering loss, simple smoothness priors, and a
+            data-driven BRDF prior learned from real-world BRDF measurements. By
+            explicitly modeling light visibility, NeRFactor is able to separate
+            shadows from albedo and synthesize realistic soft or hard shadows
+            under arbitrary lighting conditions. NeRFactor is able to recover
+            convincing 3D models for free-viewpoint relighting in this challenging
+            and underconstrained capture setup for both synthetic and real scenes.
+            Qualitative and quantitative experiments show that NeRFactor
+            outperforms classic and deep learning-based state of the art across
+            various tasks. Our videos, code, and data are available at
+            people.csail.mit.edu/xiuming/projects/nerfactor/.
+          </td>
         </tr>
         <tr>
-          <img src="assets/images/teaser.jpg" width="100%" />
+          <td><img src="assets/images/teaser.jpg" width="100%" /></td>
         </tr>
         <tr>
-          <p class="caption">
-            Given a set of posed images of an object captured from multiple
-            views under just one unknown illumination condition (left), Neural
-            Radiance Factorization (NeRFactor) is able to factorize the scene
-            into 3D neural fields of surface normals, light visibility, albedo,
-            and material (center), which enables applications such as
-            free-viewpoint relighting and material editing (right).
-          </p>
+          <td>
+            <p class="caption">
+              Given a set of posed images of an object captured from multiple
+              views under just one unknown illumination condition (left), Neural
+              Radiance Factorization (NeRFactor) is able to factorize the scene
+              into 3D neural fields of surface normals, light visibility, albedo,
+              and material (center), which enables applications such as
+              free-viewpoint relighting and material editing (right).
+            </p>
+          </td>
         </tr>
       </table>
     </div>
@@ -131,7 +135,7 @@
           >NeRFactor: Neural Factorization of Shape and Reflectance Under an
           Unknown Illumination</b
         ><br />
-        <a target="_blank" href="http://people.csail.mit.edu/xiuming/"
+        <a target="_blank" href="https://xiuming.info/"
           >Xiuming Zhang</a
         >,
         <a target="_blank" href="https://pratulsrinivasan.github.io/"
@@ -152,7 +156,7 @@
         >&emsp;/&emsp;
         <a
           target="_blank"
-          href="http://people.csail.mit.edu/xiuming/docs/bib/nerfactor.bib"
+          href="https://xiuming.info/docs/bib/nerfactor.bib"
           >BibTeX</a
         >
       </p>
