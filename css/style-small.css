@@ -51,16 +51,17 @@ header br {
 }
 
 header.major h2 {
-  font-size: 2.5em;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 header.major h2 + p {
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 /* Features */
 
-.features article .image {
+.features .feature-item .image {
   display: block;
   margin: 0 0 2.25em 0;
   padding-right: 0;
@@ -68,11 +69,11 @@ header.major h2 + p {
 }
 
 /* Overriding above: no images when on small screens */
-.features article .image {
+.features .feature-item .image {
   display: none;
 }
 
-.features article .inner {
+.features .feature-item .inner {
   display: block;
   width: 100%;
 }

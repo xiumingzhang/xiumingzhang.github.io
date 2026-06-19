@@ -79,13 +79,13 @@
 
       if (skel.vars.IEVersion < 10) {
         $.fn.n33_formerize = function () {
-          var _fakes = new Array(),
+          var _fakes = [],
             _form = $(this);
           _form
             .find('input[type=text],textarea')
             .each(function () {
               var e = $(this);
-              if (e.val() == '' || e.val() == e.attr('placeholder')) {
+              if (e.val() === '' || e.val() === e.attr('placeholder')) {
                 e.addClass('formerize-placeholder');
                 e.val(e.attr('placeholder'));
               }
@@ -93,7 +93,7 @@
             .blur(function () {
               var e = $(this);
               if (e.attr('name').match(/_fakeformerizefield$/)) return;
-              if (e.val() == '') {
+              if (e.val() === '') {
                 e.addClass('formerize-placeholder');
                 e.val(e.attr('placeholder'));
               }
@@ -101,7 +101,7 @@
             .focus(function () {
               var e = $(this);
               if (e.attr('name').match(/_fakeformerizefield$/)) return;
-              if (e.val() == e.attr('placeholder')) {
+              if (e.val() === e.attr('placeholder')) {
                 e.removeClass('formerize-placeholder');
                 e.val('');
               }
@@ -116,14 +116,14 @@
                 .replace(/type="password"/i, 'type="text"')
                 .replace(/type=password/i, 'type=text')
             );
-            if (e.attr('id') != '')
+            if (e.attr('id'))
               x.attr('id', e.attr('id') + '_fakeformerizefield');
-            if (e.attr('name') != '')
+            if (e.attr('name'))
               x.attr('name', e.attr('name') + '_fakeformerizefield');
             x.addClass('formerize-placeholder')
               .val(x.attr('placeholder'))
               .insertAfter(e);
-            if (e.val() == '') e.hide();
+            if (e.val() === '') e.hide();
             else x.hide();
             e.blur(function (event) {
               event.preventDefault();
@@ -131,7 +131,7 @@
               var x = e
                 .parent()
                 .find('input[name=' + e.attr('name') + '_fakeformerizefield]');
-              if (e.val() == '') {
+              if (e.val() === '') {
                 e.hide();
                 x.show();
               }
@@ -162,7 +162,7 @@
                   var e = $(this);
                   if (e.attr('name').match(/_fakeformerizefield$/))
                     e.attr('name', '');
-                  if (e.val() == e.attr('placeholder')) {
+                  if (e.val() === e.attr('placeholder')) {
                     e.removeClass('formerize-placeholder');
                     e.val('');
                   }
@@ -190,7 +190,7 @@
                             e.attr('name') +
                             '_fakeformerizefield]'
                         );
-                      if (e.val() == '') {
+                      if (e.val() === '') {
                         e.hide();
                         x.show();
                       } else {
@@ -205,7 +205,7 @@
                     case 'text':
                     case 'textarea':
                       e.val(e.attr('defaultValue'));
-                      if (e.val() == '') {
+                      if (e.val() === '') {
                         e.addClass('formerize-placeholder');
                         e.val(e.attr('placeholder'));
                       }
@@ -216,7 +216,8 @@
                   }
                 });
               window.setTimeout(function () {
-                for (x in _fakes) _fakes[x].trigger('formerize_sync');
+                for (var x = 0; x < _fakes.length; x++)
+                  _fakes[x].trigger('formerize_sync');
               }, 10);
             });
           return _form;
@@ -236,7 +237,7 @@
           href = $this.attr('href');
 
         // Not an internal link? Bail.
-        if (href.charAt(0) != '#') return;
+        if (href.charAt(0) !== '#') return;
 
         // Prevent default behavior.
         event.preventDefault();
@@ -253,7 +254,7 @@
           id;
 
         // Not an internal link? Bail.
-        if (href.charAt(0) != '#') return;
+        if (href.charAt(0) !== '#') return;
 
         // Add to scrollzer ID list.
         id = href.substring(1);

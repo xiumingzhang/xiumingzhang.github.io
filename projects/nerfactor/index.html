@@ -1,34 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>
 
 <html lang="en">
   <head>
     <title>NeRFactor</title>
-    <link rel="stylesheet" href="./style.css" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="icon" type="image/x-icon" href="assets/logos/csail.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/x-icon" href="assets/logos/csail.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project page for NeRFactor.">
     <!-- Facebook -->
-    <meta property="og:image" content="https://xiuming.info/projects/nerfactor/assets/images/cover.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="1024" />
-    <meta property="og:image:height" content="512" />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://xiuming.info/projects/nerfactor/assets/images/cover.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1582">
+    <meta property="og:image:height" content="1052">
+    <meta property="og:type" content="website">
     <meta
       property="og:url"
-      content="https://xiuming.info/projects/nerfactor/"
-    />
-    <meta property="og:title" content="NeRFactor" />
-    <meta property="og:description" content="Project page for NeRFactor." />
+      content="https://xiuming.info/projects/nerfactor/">
+    <meta property="og:title" content="NeRFactor">
+    <meta property="og:description" content="Project page for NeRFactor.">
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="NeRFactor" />
-    <meta name="twitter:description" content="Project page for NeRFactor." />
-    <meta name="twitter:image" content="https://xiuming.info/projects/nerfactor/assets/images/cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NeRFactor">
+    <meta name="twitter:description" content="Project page for NeRFactor.">
+    <meta name="twitter:image" content="https://xiuming.info/projects/nerfactor/assets/images/cover.jpg">
   </head>
 
   <body>
+    <main>
     <h1>
-      <b>NeRFactor</b>: Neural Factorization of Shape and Reflectance<br />Under
+      <b>NeRFactor</b>: Neural Factorization of Shape and Reflectance <br>Under
       an Unknown Illumination
     </h1>
     <div class="venue_card">
@@ -37,51 +38,62 @@
 
     <div class="author_card">
       <p class="author">
-        <a target="_blank" href="https://xiuming.info/"
+        <a target="_blank" rel="noopener noreferrer" href="https://xiuming.info/"
           >Xiuming Zhang</a
         >&nbsp;<sup>1</sup>&emsp;&emsp;
-        <a target="_blank" href="https://pratulsrinivasan.github.io/"
+        <a target="_blank" rel="noopener noreferrer" href="https://pratulsrinivasan.github.io/"
           >Pratul P. Srinivasan</a
         >&nbsp;<sup>2</sup>&emsp;&emsp;
-        <a target="_blank" href="https://boyangdeng.com/">Boyang Deng</a
+        <a target="_blank" rel="noopener noreferrer" href="https://boyangdeng.com/">Boyang Deng</a
         >&nbsp;<sup>2</sup>&emsp;&emsp;
-        <a target="_blank" href="http://www.pauldebevec.com/">Paul Debevec</a
+        <a target="_blank" rel="noopener noreferrer" href="https://www.pauldebevec.com/">Paul Debevec</a
         >&nbsp;<sup>2</sup>&emsp;&emsp;
-        <a target="_blank" href="http://billf.mit.edu/">William T. Freeman</a
+        <a target="_blank" rel="noopener noreferrer" href="https://billf.mit.edu/">William T. Freeman</a
         >&nbsp;<sup>1,&nbsp;2</sup>&emsp;&emsp;
-        <a target="_blank" href="https://jonbarron.info/">Jonathan T. Barron</a
+        <a target="_blank" rel="noopener noreferrer" href="https://jonbarron.info/">Jonathan T. Barron</a
         >&nbsp;<sup>2</sup>
       </p>
-      <table class="authoraffliation">
+      <table class="authoraffliation" role="presentation">
         <tr>
           <td>
             <sup>1</sup>&nbsp;<a
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               href="https://www.csail.mit.edu/"
               >MIT CSAIL</a
             >
           </td>
           <td>
-            <sup>2</sup>&nbsp;<a target="_blank" href="https://research.google/"
+            <sup>2</sup>&nbsp;<a target="_blank" rel="noopener noreferrer" href="https://research.google/"
               >Google Research</a
             >
           </td>
         </tr>
         <tr>
           <td>
-            <img src="assets/logos/mit.png" height="40em" />&emsp;<img
+            <img
+              src="assets/logos/mit.png"
+              class="project-logo"
+              decoding="async"
+              alt="MIT">&emsp;<img
               src="assets/logos/csail.png"
-              height="40em"
-            />
+              class="project-logo"
+              decoding="async"
+              alt="MIT CSAIL">
           </td>
-          <td><img src="assets/logos/google_research.png" height="40em" /></td>
+          <td>
+            <img
+              src="assets/logos/google_research.png"
+              class="project-logo"
+              decoding="async"
+              alt="Google Research">
+          </td>
         </tr>
       </table>
     </div>
 
     <div class="card">
       <h2>Abstract</h2>
-      <table>
+      <table role="presentation">
         <tr class="padbottom">
           <td>
             We address the problem of recovering the shape and spatially-varying
@@ -107,11 +119,18 @@
             Qualitative and quantitative experiments show that NeRFactor
             outperforms classic and deep learning-based state of the art across
             various tasks. Our videos, code, and data are available at
-            people.csail.mit.edu/xiuming/projects/nerfactor/.
+            xiuming.info/projects/nerfactor/.
           </td>
         </tr>
         <tr>
-          <td><img src="assets/images/teaser.jpg" width="100%" /></td>
+          <td>
+            <img
+              src="assets/images/teaser.jpg"
+              class="teaser-image"
+              loading="lazy"
+              decoding="async"
+              alt="NeRFactor relighting pipeline teaser">
+          </td>
         </tr>
         <tr>
           <td>
@@ -134,28 +153,28 @@
         <b
           >NeRFactor: Neural Factorization of Shape and Reflectance Under an
           Unknown Illumination</b
-        ><br />
-        <a target="_blank" href="https://xiuming.info/"
+        ><br>
+        <a target="_blank" rel="noopener noreferrer" href="https://xiuming.info/"
           >Xiuming Zhang</a
         >,
-        <a target="_blank" href="https://pratulsrinivasan.github.io/"
+        <a target="_blank" rel="noopener noreferrer" href="https://pratulsrinivasan.github.io/"
           >Pratul P. Srinivasan</a
-        >, <a target="_blank" href="https://boyangdeng.com/">Boyang Deng</a>,
-        <a target="_blank" href="http://www.pauldebevec.com/">Paul Debevec</a>,
-        <a target="_blank" href="http://billf.mit.edu/">William T. Freeman</a>,
-        <a target="_blank" href="https://jonbarron.info/">Jonathan T. Barron</a>
-        <br />
+        >, <a target="_blank" rel="noopener noreferrer" href="https://boyangdeng.com/">Boyang Deng</a>,
+        <a target="_blank" rel="noopener noreferrer" href="https://www.pauldebevec.com/">Paul Debevec</a>,
+        <a target="_blank" rel="noopener noreferrer" href="https://billf.mit.edu/">William T. Freeman</a>,
+        <a target="_blank" rel="noopener noreferrer" href="https://jonbarron.info/">Jonathan T. Barron</a>
+        <br>
         <b>TOG 2021</b> (Proc. SIGGRAPH Asia)
-        <br />
-        <a target="_blank" href="https://arxiv.org/pdf/2106.01970.pdf">arXiv</a
+        <br>
+        <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2106.01970.pdf">arXiv</a
         >&emsp;/&emsp;
         <a
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
           href="https://dl.acm.org/doi/abs/10.1145/3478513.3480496"
           >Publisher</a
         >&emsp;/&emsp;
         <a
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
           href="https://xiuming.info/docs/bib/nerfactor.bib"
           >BibTeX</a
         >
@@ -185,20 +204,25 @@
         Downloads:&emsp;
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://drive.google.com/file/d/1nPLhzUh7byjDlKOBKvaaeCGGGKlND3OL/view?usp=sharing"
           >1080p (212 MB)</a
         >&ensp; / &ensp;
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://drive.google.com/file/d/1FmhKl-BaJQHAlQiw8HO_KGo_OMuaCOqf/view?usp=sharing"
           >720p (154 MB)</a
         >
       </p>
-      <div style="position: relative; padding-top: 60%">
+      <div class="video-frame">
         <iframe
           src="https://www.youtube.com/embed/UUVSPJlwhPg"
+          title="NeRFactor paper video"
+          loading="lazy"
           allowfullscreen
-          style="position: absolute; top: 0; left: 0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
         ></iframe>
       </div>
       <p class="caption"><i>v0 (06/01/2021)</i></p>
@@ -206,11 +230,14 @@
 
     <div class="card">
       <h2>Talk</h2>
-      <div style="position: relative; padding-top: 60%">
+      <div class="video-frame">
         <iframe
           src="https://www.youtube.com/embed/vt_zQTxqmlk"
+          title="NeRFactor talk video"
+          loading="lazy"
           allowfullscreen
-          style="position: absolute; top: 0; left: 0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
         ></iframe>
       </div>
       <p class="caption"><i>v1 (12/22/2021)</i></p>
@@ -219,7 +246,7 @@
     <div class="card">
       <h2>Code</h2>
       <p>
-        <a target="_blank" href="https://github.com/google/nerfactor"
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/google/nerfactor"
           >This GitHub repository</a
         >
         includes code for:
@@ -246,7 +273,7 @@
       <p>
         All subsequent folders and files are specified w.r.t.
         <a
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
           href="https://drive.google.com/drive/folders/1-9HhqWwJhTBjUZqttLafKo72fNl4sB5E"
           >this Google Drive root</a
         >.
@@ -281,8 +308,8 @@
       <table>
         <tbody>
           <tr>
-            <td>Rendered Images</td>
-            <td>Real Images</td>
+            <th scope="col">Rendered Images</th>
+            <th scope="col">Real Images</th>
           </tr>
           <tr>
             <td><code>./rendered-images/</code></td>
@@ -302,9 +329,9 @@
       <table>
         <tbody>
           <tr>
-            <td>Scenes</td>
-            <td>Light Probes</td>
-            <td>Cameras</td>
+            <th scope="col">Scenes</th>
+            <th scope="col">Light Probes</th>
+            <th scope="col">Cameras</th>
           </tr>
           <tr>
             <td><code>./blender-scenes.zip</code></td>
@@ -327,7 +354,7 @@
       <p>
         Here are our results on all four synthetic scenes and two real captures:
       </p>
-      <table>
+      <table role="presentation">
         <tbody>
           <tr>
             <td><code>lego_3072</code></td>
@@ -338,19 +365,31 @@
             <td>
               <iframe
                 src="https://www.youtube.com/embed/RMUTfDnlMuE"
+                title="NeRFactor result for lego_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/YOdhyHl0uec"
+                title="NeRFactor result for hotdog_2163"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/mMqS9Ek1NUI"
+                title="NeRFactor result for drums_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
           </tr>
@@ -363,19 +402,31 @@
             <td>
               <iframe
                 src="https://www.youtube.com/embed/8xnwowUQy7M"
+                title="NeRFactor result for ficus_2188"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/dIjKj_GOcoU"
+                title="NeRFactor result for vasedeck"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/615faNRV-_Y"
+                title="NeRFactor result for pinecone"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
           </tr>
@@ -387,7 +438,7 @@
         Here are our material editing results on all four synthetic scenes and
         two real captures:
       </p>
-      <table>
+      <table role="presentation">
         <tbody>
           <tr>
             <td><code>lego_3072</code></td>
@@ -398,19 +449,31 @@
             <td>
               <iframe
                 src="https://www.youtube.com/embed/F4wVn8rR9Ac"
+                title="NeRFactor material editing result for lego_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/tMaUAz_tznY"
+                title="NeRFactor material editing result for hotdog_2163"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/yZ8yUHsZmsY"
+                title="NeRFactor material editing result for drums_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
           </tr>
@@ -423,19 +486,31 @@
             <td>
               <iframe
                 src="https://www.youtube.com/embed/JemF9E1fkd4"
+                title="NeRFactor material editing result for ficus_2188"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/thhQmVb7N98"
+                title="NeRFactor material editing result for vasedeck"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/EAkalvpmU5s"
+                title="NeRFactor material editing result for pinecone"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
           </tr>
@@ -451,7 +526,7 @@
         This model variant fixes the shape to NeRF's, optimizing only the
         reflectance and illumination:
       </p>
-      <table>
+      <table role="presentation">
         <tbody>
           <tr>
             <td><code>lego_3072</code></td>
@@ -463,25 +538,41 @@
             <td>
               <iframe
                 src="https://www.youtube.com/embed/ZvrCRHXS1Fw"
+                title="NeRFactor ablation using NeRF shape for lego_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/6uqydXRGnSI"
+                title="NeRFactor ablation using NeRF shape for hotdog_2163"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/8QJFyiQgsvA"
+                title="NeRFactor ablation using NeRF shape for drums_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/gwW1F_TJ1W0"
+                title="NeRFactor ablation using NeRF shape for ficus_2188"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
           </tr>
@@ -489,7 +580,7 @@
       </table>
       <h4>No Smoothness Regularization</h4>
       <p>This model variant uses no smoothness regularization:</p>
-      <table>
+      <table role="presentation">
         <tbody>
           <tr>
             <td><code>lego_3072</code></td>
@@ -501,25 +592,41 @@
             <td>
               <iframe
                 src="https://www.youtube.com/embed/yzaAjazEABQ"
+                title="NeRFactor ablation without smoothness for lego_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/QIRT_J3Vq88"
+                title="NeRFactor ablation without smoothness for hotdog_2163"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/2ID4Sph1-PY"
+                title="NeRFactor ablation without smoothness for drums_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/7dZ8vKB1Xxc"
+                title="NeRFactor ablation without smoothness for ficus_2188"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
           </tr>
@@ -529,7 +636,7 @@
       <p>
         This model variant uses microfacet BRDFs instead of the learned BRDFs:
       </p>
-      <table>
+      <table role="presentation">
         <tbody>
           <tr>
             <td><code>lego_3072</code></td>
@@ -541,25 +648,41 @@
             <td>
               <iframe
                 src="https://www.youtube.com/embed/W-DXgCXYGt4"
+                title="NeRFactor ablation using microfacet BRDFs for lego_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/3ftZ77IRFnA"
+                title="NeRFactor ablation using microfacet BRDFs for hotdog_2163"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/QbTWVV8b38M"
+                title="NeRFactor ablation using microfacet BRDFs for drums_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/AoK07Yf2jFY"
+                title="NeRFactor ablation using microfacet BRDFs for ficus_2188"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
           </tr>
@@ -570,7 +693,7 @@
         This model variant trains the surface normal and light visibility MLPs
         from scratch, together with the reflectance and lighting:
       </p>
-      <table>
+      <table role="presentation">
         <tbody>
           <tr>
             <td><code>lego_3072</code></td>
@@ -582,25 +705,41 @@
             <td>
               <iframe
                 src="https://www.youtube.com/embed/TG2nWMoPBug"
+                title="NeRFactor ablation without geometry pretraining for lego_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/AURZ6cyhgBI"
+                title="NeRFactor ablation without geometry pretraining for hotdog_2163"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/0qYOTtTnrpA"
+                title="NeRFactor ablation without geometry pretraining for drums_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/Orv6Wyf1eL8"
+                title="NeRFactor ablation without geometry pretraining for ficus_2188"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
           </tr>
@@ -613,7 +752,7 @@
         Nishino [2014] (implemented by ourselves due to the lack of the source
         code) on all four synthetic scenes:
       </p>
-      <table>
+      <table role="presentation">
         <tbody>
           <tr>
             <td><code>lego_3072</code></td>
@@ -625,25 +764,41 @@
             <td>
               <iframe
                 src="https://www.youtube.com/embed/HvHWxRzniY0"
+                title="Oxholm and Nishino comparison for lego_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/mOblj68xHic"
+                title="Oxholm and Nishino comparison for hotdog_2163"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/z1m5cAYi0zM"
+                title="Oxholm and Nishino comparison for drums_3072"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
             <td>
               <iframe
                 src="https://www.youtube.com/embed/EaVaHPqnzCo"
+                title="Oxholm and Nishino comparison for ficus_2188"
+                loading="lazy"
                 allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </td>
           </tr>
@@ -655,8 +810,9 @@
       </p>
     </div>
 
-    <div class="copyright_card">
+    </main>
+    <footer class="copyright_card">
       <p>Copyright &copy; 2021 Paper Authors. All Rights Reserved.</p>
-    </div>
+    </footer>
   </body>
 </html>

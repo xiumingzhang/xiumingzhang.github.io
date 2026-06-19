@@ -12,7 +12,6 @@ build/
 # Generated files
 css/academicons.css
 css/academicons.min.css
-css/font-awesome.min.css
 
 # Fonts and images
 fonts/
@@ -41,4 +40,4 @@ js/jquery.min.js
 js/jquery.scrolly.min.js
 js/jquery.scrollzer.min.js
 js/skel-layers.min.js
-js/skel.min.js 
+js/skel.min.js

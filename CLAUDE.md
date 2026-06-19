@@ -22,7 +22,7 @@ Personal academic homepage for Xiuming Zhang, hosted on GitHub Pages at xiuming.
 
 **Separate pages** under `pages/` (bio.html, name.html) and `projects/` (e.g., nerfactor/) have their own stylesheets independent of the main page.
 
-**Icons:** Font Awesome 6 (WOFF2 only, local fonts via `css/fa6-local-fonts.css`) and Academicons (`css/academicons.css`).
+**Icons:** Font Awesome 6 (WOFF2 only, local fonts via `css/fa6-local-fonts.css`) and Academicons (served via `css/academicons.min.css`; unminified source in `css/academicons.css`).
 
 **JS stack:** jQuery + scrolly/scrollzer plugins for smooth scroll and active nav state tracking.
 

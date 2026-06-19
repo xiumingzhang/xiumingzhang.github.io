@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400&display=swap');
 
 /*
 Read Only by HTML5 UP
@@ -22,6 +22,10 @@ textarea {
   font-size: 12pt;
   font-weight: 400;
   line-height: 1.55em;
+}
+
+main {
+  display: block;
 }
 
 a {
@@ -53,6 +57,12 @@ a.noborderbottom {
 a:hover {
   border-bottom-color: transparent;
   color: #44f !important;
+}
+
+a:focus,
+a:focus-visible {
+  outline: 3px solid #44f;
+  outline-offset: 3px;
 }
 
 strong,
@@ -94,6 +104,27 @@ p.caption {
   font-size: 0.9em;
   text-align: center;
   line-height: 1.2em;
+}
+
+.project-logo {
+  height: 40px;
+}
+
+.teaser-image {
+  width: 100%;
+}
+
+.video-frame {
+  position: relative;
+  padding-top: 60%;
+}
+
+.video-frame iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 h1,
@@ -458,7 +489,7 @@ table td {
 }
 
 table th {
-  color: #fff;
+  color: #1b1b1b;
   font-size: 0.9em;
   font-weight: 700;
   padding: 0.2em 0.2em 0.2em 0.2em;
