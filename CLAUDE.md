@@ -14,7 +14,7 @@ Personal academic homepage for Xiuming Zhang, hosted on GitHub Pages at xiuming.
 
 ## Architecture
 
-**Single-page design.** Nearly all content lives in `index.html` (~2400 lines), organized as sections navigated by anchor links (#about, #news, #products, #publications, #press, #services).
+**Single-page design.** Nearly all content lives in `index.html` (~2400 lines), organized as sections navigated by anchor links (#about, #news, #products, #publications, #press).
 
 **Responsive framework:** skel.js (`js/skel.min.js` + `js/skel-layers.min.js`) manages 5 breakpoints configured in `js/init.js`. Each breakpoint has a corresponding CSS file:
 - `css/style.css` — base styles
