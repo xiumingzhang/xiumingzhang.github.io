@@ -1,3 +1,5 @@
+
+
 # Xiuming Zhang's Homepage
 
 Modified from [the Read Only template](https://html5up.net/read-only) of
@@ -13,3 +15,5 @@ See it in action [here](https://xiuming.info).
 Please feel free to use this for your homepage, but on your page, please
 attribute the source to [my homepage](https://xiuming.info)
 and [HTML5 UP](https://html5up.net/).
+
+There is no build step; open `index.html` in a browser to preview it.
