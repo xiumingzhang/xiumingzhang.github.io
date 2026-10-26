@@ -63,6 +63,49 @@
   });
 
   $(function () {
+    // Share profile destinations; Formal Bio appears only in the main body.
+    var $sidebarLinks = $('#profile-links').clone().removeAttr('id');
+    $sidebarLinks.find('.profile-bio').remove();
+    $sidebarLinks.find('a, button').removeClass('button alt small compact').addClass('icon');
+    $sidebarLinks.appendTo('#header > footer');
+
+    var $emailButtons = $('.profile-links [data-show-email]');
+    if ($emailButtons.length) {
+      var $emailPanel = $('<div id="email-panel" class="email-panel" popover="auto" aria-label="Email address"><span class="email-address" role="status" aria-live="polite" aria-atomic="true"></span><button type="button" class="button alt compact" aria-live="polite" autofocus>Copy</button><span class="copy-feedback" role="status"></span></div>').appendTo('body');
+      var $emailAddress = $emailPanel.find('.email-address');
+      var $copyButton = $emailPanel.find('button');
+      var $copyFeedback = $emailPanel.find('.copy-feedback');
+      var email;
+      $emailButtons.on('click', function () {
+        email = ['xiuming6zhang', 'gmail.com'].join('@');
+        $emailAddress.text(email);
+        $copyButton.text('Copy');
+        $copyFeedback.empty();
+      });
+      $emailPanel[0].addEventListener('beforetoggle', function (event) {
+        if (event.newState === 'closed') {
+          $emailAddress.empty();
+          $copyButton.text('Copy');
+          $copyFeedback.empty();
+          email = undefined;
+        }
+      });
+      $copyButton.on('click', async function () {
+        try {
+          await navigator.clipboard.writeText(email);
+          if ($emailPanel[0].matches(':popover-open')) {
+            $copyButton.text('Copied');
+            $copyFeedback.empty();
+          }
+        } catch (error) {
+          if ($emailPanel[0].matches(':popover-open')) {
+            $copyButton.text('Copy');
+            $copyFeedback.text('Copy unavailable; select the address to copy manually.');
+          }
+        }
+      });
+    }
+
     var $body = $('body'),
       $header = $('#header'),
       $nav = $('#nav'),

@@ -68,15 +68,11 @@ a:hover {
   color: #0000ff !important;
 }
 
-a:focus,
 a:focus-visible,
-.button:focus,
 .button:focus-visible,
-input[type='submit']:focus,
+.profile-links button:focus-visible,
 input[type='submit']:focus-visible,
-input[type='reset']:focus,
 input[type='reset']:focus-visible,
-input[type='button']:focus,
 input[type='button']:focus-visible {
   outline: 3px solid #a31f34;
   outline-offset: 3px;
@@ -680,6 +676,91 @@ ul.icons li .icon:before {
   font-size: 1.25em;
 }
 
+ul.profile-links {
+  display: flex;
+  gap: 0.5em;
+}
+
+ul.profile-links li {
+  padding: 0;
+}
+
+.profile-links .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.profile-links .icon i {
+  font-size: 1.25em;
+}
+
+.profile-links button {
+  font-family: inherit;
+}
+
+.profile-links button.icon {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+}
+
+#profile-links {
+  flex-wrap: wrap;
+}
+
+#profile-links i {
+  display: none;
+}
+
+#header .profile-links {
+  justify-content: center;
+}
+
+.email-panel {
+  position: fixed;
+  inset: auto;
+  position-area: bottom span-all;
+  justify-self: anchor-center;
+  position-try-fallbacks: flip-block;
+  margin: 0.5em;
+  width: max-content;
+  max-width: calc(100% - 2em);
+  padding: 0.65em 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  color: #555;
+  font-size: 0.85em;
+  overflow-wrap: anywhere;
+}
+
+.email-panel:popover-open {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.email-panel .button {
+  padding: 0 1em;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.copy-feedback {
+  flex-basis: 100%;
+}
+
+.copy-feedback:empty {
+  display: none;
+}
+
 ul.actions {
   cursor: default;
   list-style: none;
@@ -951,6 +1032,12 @@ input[type='button'].small,
   font-size: 0.8em;
 }
 
+.button.compact {
+  height: 2.25em;
+  line-height: 2.25em;
+  padding: 0 1em;
+}
+
 input[type='submit'].big,
 input[type='reset'].big,
 input[type='button'].big,
@@ -1147,7 +1234,8 @@ input[type='button']:disabled,
   margin: 0;
 }
 
-#header > footer .icons li a {
+#header > footer .icons li a,
+#header > footer .icons li button {
   color: #fff;
 }
 

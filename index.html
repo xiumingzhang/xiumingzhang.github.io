@@ -52,41 +52,7 @@
           </ul>
         </nav>
         <footer>
-          <ul class="icons">
-            <li>
-              <a
-                href="https://github.com/xiumingzhang"
-                target="_blank" rel="noopener noreferrer"
-                class="icon fa-github"
-                ><span class="label">GitHub</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/xiumingzhang"
-                target="_blank" rel="noopener noreferrer"
-                class="icon fa-linkedin"
-                ><span class="label">LinkedIn</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://x.com/xiuming_zhang"
-                target="_blank" rel="noopener noreferrer"
-                class="icon fa-x-twitter"
-                ><span class="label">X</span></a
-              >
-            </li>
-
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCVd6OvuPre67jyXZwZYDnAw/playlists"
-                target="_blank" rel="noopener noreferrer"
-                class="icon fa-youtube"
-                ><span class="label">YouTube</span></a
-              >
-            </li>
-          </ul>
+          <!-- Filled from #profile-links so both rows stay in sync. -->
         </footer>
       </section>
 
@@ -136,8 +102,7 @@
                 >
               </i>
               studies inverse rendering and its applications, including 3D shape
-              reconstruction and free-viewpoint relighting. Here is
-              <a href="pages/bio.html">a more formal bio</a>.
+              reconstruction and free-viewpoint relighting.
             </p>
 
             <!-- <p>
@@ -147,18 +112,27 @@
               </mark>
             </p> -->
 
-            <p>
-              <a
-                target="_blank" rel="noopener noreferrer"
-                href="https://scholar.google.com/citations?user=5hl9MqMAAAAJ"
-                class="button alt icon fa-google small"
-                >Google Scholar</a
-              >
-              <span class="button unclickable icon fa-envelope small"
-                >xiuming6zhang <span class="obfuscated-word">at</span> gmail
-                <span class="obfuscated-word">dot</span> com
-              </span>
-            </p>
+            <ul id="profile-links" class="icons profile-links" aria-label="Profile links">
+              <li>
+                <a href="https://x.com/xiuming_zhang" target="_blank" rel="noopener noreferrer"
+                  class="button alt small compact" title="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span class="label">X</span></a>
+              </li>
+              <li>
+                <button type="button" data-show-email popovertarget="email-panel"
+                  class="button alt small compact" title="Show email address"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span class="label">Email</span></button>
+              </li>
+              <li>
+                <a href="https://scholar.google.com/citations?user=5hl9MqMAAAAJ" target="_blank" rel="noopener noreferrer"
+                  class="button alt small compact" title="Google Scholar"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i><span class="label">Google Scholar</span></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/xiumingzhang" target="_blank" rel="noopener noreferrer"
+                  class="button alt small compact" title="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a>
+              </li>
+              <li class="profile-bio">
+                <a href="pages/bio.html" class="button alt small compact"><span class="label">Formal Bio</span></a>
+              </li>
+            </ul>
             <h3>Recent Experiences</h3>
             <table class="invisible" role="presentation">
               <tbody class="invisible">
