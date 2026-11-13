@@ -271,7 +271,7 @@
     <div class="card">
       <h2>Downloads</h2>
       <p>
-        All subsequent folders and files are specified w.r.t.
+        All subsequent folders and files are specified relative to
         <a
           target="_blank" rel="noopener noreferrer"
           href="https://drive.google.com/drive/folders/1-9HhqWwJhTBjUZqttLafKo72fNl4sB5E"
@@ -287,14 +287,15 @@
 
       <h3>Pre-Trained Models <mark>(new as of 07/17/2022)</mark></h3>
       <p>
-        There are four types of pre-trained models in NeRFactor. The first is
-        the MERL BRDF model, which we release here. The second are the NeRF
-        models that generate the surfaces we start with. We are not releasing
-        these but you can train these NeRF models and then generate the surfaces
-        using our code. The third are the NeRFactor shape pre-training models
-        that learn to just reproduce the NeRF surfaces. We are not releasing
-        these but you can train them easily with our code. The fourth are the
-        final NeRFactor models (<code>hotdog</code>, <code>ficus</code>,
+        There are four types of pre-trained models in NeRFactor. The first type
+        is the MERL BRDF model, which we release here. The second type consists
+        of the NeRF models that generate the surfaces we start with. We are not
+        releasing these, but you can train these NeRF models and then generate
+        the surfaces using our code. The third type consists of the NeRFactor
+        shape pre-training models that learn to reproduce the NeRF surfaces.
+        We are not releasing these, but you can train them easily with our code.
+        The fourth type consists of the final NeRFactor models
+        (<code>hotdog</code>, <code>ficus</code>,
         <code>lego</code>, and <code>drums</code>), which we release here. See
         <code>./pretrained_models.zip</code>.
       </p>
@@ -749,8 +750,8 @@
       <h3>Oxholm & Nishino [2014]</h3>
       <p>
         Here is how NeRFactor compares with an enhanced version of Oxholm &
-        Nishino [2014] (implemented by ourselves due to the lack of the source
-        code) on all four synthetic scenes:
+        Nishino [2014] (implemented by us because the original source code was
+        unavailable) on all four synthetic scenes:
       </p>
       <table role="presentation">
         <tbody>
